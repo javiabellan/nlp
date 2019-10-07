@@ -138,7 +138,8 @@
 
 > #### BLEU limitation
 > "He ate the apple" & "He ate the potato" has the same BLEU score.
-
+> 
+> [BLEU at your own risk](https://towardsdatascience.com/evaluating-text-output-in-nlp-bleu-at-your-own-risk-e8609665a213)
 
 # 👨🏻‍🏫 Transfer Learning
 
@@ -218,6 +219,11 @@ coche[0].vector      # Show vector
 
 
 # 🔮 Deep learning models [ALL MODELS](https://github.com/thunlp/PLMpapers)
+
+- Recurrent
+- Convolution
+  - [Lightweight and Dynamic Convolutions](https://arxiv.org/abs/1901.10430)
+- Attention (transformers)
 
 ![models](img/models.jpg)
 
@@ -364,6 +370,7 @@ https://huggingface.co/pytorch-transformers/pretrained_models.html
   - Read [MASS](https://www.microsoft.com/en-us/research/blog/introducing-mass-a-pre-training-method-that-outperforms-bert-and-gpt-in-sequence-to-sequence-language-generation-tasks) (transfer learning in translation for transformers?)
   - Read [CNNs better than attention](https://arxiv.org/abs/1901.10430)
 - **Modern NLP**
+  - [NLP-progress](https://nlpprogress.com)
   - [NLP Overview](https://nlpoverview.com)
   - [NLP infographic](https://www.analyticsvidhya.com/blog/2019/08/complete-list-important-frameworks-nlp/)
   - [Modern NLP into Practice](https://t.co/SiaZryiO6O?amp=1) → [twit thread](https://twitter.com/joelgrus/status/1171783769495179264)
@@ -375,8 +382,12 @@ https://huggingface.co/pytorch-transformers/pretrained_models.html
   - [The Illustrated BERT & ELMo](https://jalammar.github.io/illustrated-bert)        (December 2018)
   - [The Illustrated GPT-2](https://jalammar.github.io/illustrated-gpt2)              (August 2019) ⭐
   - [Best Transformers explanation](http://www.peterbloem.nl/blog/transformers)       (August 2019) ⭐
-  - [BERT summary](https://www.lyrn.ai/2018/11/07/explained-bert-state-of-the-art-language-model-for-nlp)
-  - [BERT, RoBERTa, DistilBERT, XLNet. Which one to use?](https://www.kdnuggets.com/2019/09/bert-roberta-distilbert-xlnet-one-use.html)
+  - **BERT**:
+    - [Huggingface](https://medium.com/huggingface/multi-label-text-classification-using-bert-the-mighty-transformer-69714fa3fb3d)
+    - [Mlexplained](http://mlexplained.com/2019/01/07/paper-dissected-bert-pre-training-of-deep-bidirectional-transformers-for-language-understanding-explained/)
+    - [Slides](https://nlp.stanford.edu/seminar/details/jdevlin.pdf)
+    - [BERT summary](https://www.lyrn.ai/2018/11/07/explained-bert-state-of-the-art-language-model-for-nlp)
+    - [BERT, RoBERTa, DistilBERT, XLNet. Which one to use?](https://www.kdnuggets.com/2019/09/bert-roberta-distilbert-xlnet-one-use.html)
   - [DistilBERT model by huggingface](https://medium.com/huggingface/distilbert-8cf3380435b5)
 - **Transfer Learning** in NLP by Sebastian Ruder
   - [Blog](http://ruder.io/state-of-transfer-learning-in-nlp)
@@ -388,6 +399,7 @@ https://huggingface.co/pytorch-transformers/pretrained_models.html
   - [NLP transfer learning libraries](https://twitter.com/seb_ruder/status/1172607702884933633)
 - [7 NLP libraries](https://medium.com/microsoftazure/7-amazing-open-source-nlp-tools-to-try-with-notebooks-in-2019-c9eec058d9f1)
 - [spaCy blog](https://explosion.ai/blog)
+- [Attention and Memory](http://www.wildml.com/2016/01/attention-and-memory-in-deep-learning-and-nlp/)
 
 #### Fast.ai NLP Videos
 1. [What is NLP?](https://youtu.be/cce8ntxP_XI) ✔
