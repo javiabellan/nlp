@@ -249,6 +249,7 @@ coche[0].vector      # Show vector
 | **MegatronLM**     | Nvidia          | Aug. 2019 | Big models with parallel training                                |   |
 | **DistilBERT**     | Hugging Face    | Aug. 2019 | Compressed BERT                                                  | ✔ |
 | **[MiniBERT](https://arxiv.org/abs/1909.00100)**       | Google       | Aug. 2019 | Compressed BERT                 |   |
+| **[MultiFiT](https://arxiv.org/abs/1909.04761)**       | Fast.ai      | Sep. 2019 | Multi-lingual ULMFiT            |   |
 | **[ALBERT](https://openreview.net/pdf?id=H1eA7AEtvS)** | Google       | Sep. 2019 | Parameter reduction on BERT     |   |
 | **[CTRL](https://arxiv.org/abs/1909.05858)** | Salesforce   | Sep. 2019 | Conditional transformer LM for controllable generation | ✔ |
 | **DistilGPT-2**                              | Hugging Face | Oct. 2019 | Compressed GPT-2                | ✔ |
