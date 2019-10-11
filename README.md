@@ -362,7 +362,30 @@ https://huggingface.co/pytorch-transformers/pretrained_models.html
   - Comparable results to BERT using less parameters
   - Parameters: 66 millions
   
-  
+
+
+## Fast.ai NLP Videos
+1. [What is NLP?](https://youtu.be/cce8ntxP_XI) ✔
+2. [Topic Modeling with SVD & NMF](https://youtu.be/tG3pUwmGjsc)
+3. [Topic Modeling & SVD revisited](https://youtu.be/lRZ4aMaXPBI)
+4. [Sentiment Classification with Naive Bayes](https://youtu.be/hp2ipC5pW4I)
+5. [Sentiment Classification with Naive Bayes & Logistic Regression, contd.](https://youtu.be/dt7sArnLo1g)
+6. [Derivation of Naive Bayes & Numerical Stability](https://youtu.be/z8-Tbrg1-rE)
+7. [Revisiting Naive Bayes, and Regex](https://youtu.be/Q1zLqfnEXdw)
+8. [Intro to Language Modeling](https://youtu.be/PNNHaQUQqW8)
+9. [Transfer learning](https://youtu.be/5gCQvuznKn0)
+10. [ULMFit for non-English Languages](https://youtu.be/MDX_x6rKXAs)
+11. [Understanding RNNs](https://youtu.be/l1rlFh0PmZw)
+12. [Seq2Seq Translation](https://youtu.be/IfsjMg4fLWQ)
+13. [Word embeddings quantify 100 years of gender & ethnic stereotypes](https://youtu.be/boxV8Od4jqQ)
+14. [Text generation algorithms](https://youtu.be/3oEb_fFmPnY)
+15. [Implementing a GRU](https://youtu.be/Bl6WVj6wQaE)
+16. [Algorithmic Bias](https://youtu.be/pThqge9QDn8)
+17. [Introduction to the Transformer](https://youtu.be/AFkGPmU16QA) ✔
+18. [The Transformer for language translation](https://youtu.be/KzfyftiH7R8) ✔
+19. [What you need to know about Disinformation](https://youtu.be/vbva2RN-rbQ)
+
+
   
 # References
 
@@ -397,27 +420,8 @@ https://huggingface.co/pytorch-transformers/pretrained_models.html
   - [Code](http://tiny.cc/NAACLTransferCode) (Github)
   - [Video](https://www.youtube.com/watch?v=hNPwRPg9BrQ&t=1486s)
   - [NLP transfer learning libraries](https://twitter.com/seb_ruder/status/1172607702884933633)
+- [Hardvard NLP papers](http://nlp.seas.harvard.edu/papers)
+- [Sebastian Ruder webpage](http://ruder.io)
 - [7 NLP libraries](https://medium.com/microsoftazure/7-amazing-open-source-nlp-tools-to-try-with-notebooks-in-2019-c9eec058d9f1)
 - [spaCy blog](https://explosion.ai/blog)
 - [Attention and Memory](http://www.wildml.com/2016/01/attention-and-memory-in-deep-learning-and-nlp/)
-
-#### Fast.ai NLP Videos
-1. [What is NLP?](https://youtu.be/cce8ntxP_XI) ✔
-2. [Topic Modeling with SVD & NMF](https://youtu.be/tG3pUwmGjsc)
-3. [Topic Modeling & SVD revisited](https://youtu.be/lRZ4aMaXPBI)
-4. [Sentiment Classification with Naive Bayes](https://youtu.be/hp2ipC5pW4I)
-5. [Sentiment Classification with Naive Bayes & Logistic Regression, contd.](https://youtu.be/dt7sArnLo1g)
-6. [Derivation of Naive Bayes & Numerical Stability](https://youtu.be/z8-Tbrg1-rE)
-7. [Revisiting Naive Bayes, and Regex](https://youtu.be/Q1zLqfnEXdw)
-8. [Intro to Language Modeling](https://youtu.be/PNNHaQUQqW8)
-9. [Transfer learning](https://youtu.be/5gCQvuznKn0)
-10. [ULMFit for non-English Languages](https://youtu.be/MDX_x6rKXAs)
-11. [Understanding RNNs](https://youtu.be/l1rlFh0PmZw)
-12. [Seq2Seq Translation](https://youtu.be/IfsjMg4fLWQ)
-13. [Word embeddings quantify 100 years of gender & ethnic stereotypes](https://youtu.be/boxV8Od4jqQ)
-14. [Text generation algorithms](https://youtu.be/3oEb_fFmPnY)
-15. [Implementing a GRU](https://youtu.be/Bl6WVj6wQaE)
-16. [Algorithmic Bias](https://youtu.be/pThqge9QDn8)
-17. [Introduction to the Transformer](https://youtu.be/AFkGPmU16QA) ✔
-18. [The Transformer for language translation](https://youtu.be/KzfyftiH7R8) ✔
-19. [What you need to know about Disinformation](https://youtu.be/vbva2RN-rbQ)
