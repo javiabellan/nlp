@@ -1,13 +1,13 @@
 <h1 align="center">Natural Language Processing</h1>
 
-|       |                                                   |                  |
+|       | Index                                             |                  |
 |-------|---------------------------------------------------|------------------|
 | 📱    | [**Applications**](#-applications)               |  |
 | 📋    | [**Pipeline**](#-pipeline)                       |  |
+| 🔮    | [**Models**](#-deep-learning-models)             |  |
 | 📏    | [**Scores**](#-scores)                           |  |
 | 👨🏻‍🏫 | [**Transfer Learning**](#-transfer-learning)     |  |
 | 🤖    | [**Transformers theory**](#-transformers)        |  |
-| 🔮    | [**DL Models**](#-deep-learning-models)          |  |
 | 📦    | [**Python Packages**](#-python-packages)         |  |
  
 
@@ -218,7 +218,9 @@ coche[0].vector      # Show vector
 
 
 
-# 🔮 Deep learning models [ALL MODELS](https://github.com/thunlp/PLMpapers)
+# 🔮 Deep Learning Models
+
+> ### [ALL MODELS](https://github.com/thunlp/PLMpapers)
 
 - Recurrent
 - Convolution
@@ -227,26 +229,29 @@ coche[0].vector      # Show vector
 
 ![models](img/models.jpg)
 
-🤗 Means availability (pretrained PyTorch implementation) on [pytorch-transformers](https://github.com/huggingface/pytorch-transformers) package developed by huggingface.
+🤗 Means availability (pretrained PyTorch implementation) on [transformers](https://github.com/huggingface/transformers) package developed by huggingface.
 
-| Model              | Creator         | Date      | Breif description                                        | Data  | 🤗 |
-|:------------------:|:---------------:|:---------:|----------------------------------------------------------|-------|:---:|
-| **1st Transformer**| Google          | Jun. 2017 | Encoder & decoder transformer with attention |       |     |
-| **ULMFiT**         | Fast.ai         | Jan. 2018 | Regular LSTM              |       |     |
-| **ELMo**           | AllenNLP        | Feb. 2018 | Bidirectional LSTM        |       |     |
-| **GPT**            | OpenAI          | Jun. 2018 | Transformer on LM         |       | ✔ |
-| **BERT**           | Google          | Oct. 2018 | Transformer on MLM (& NSP)| 16GB  | ✔ |
-| **Transformer-XL** | Google/CMU      | Jan. 2019 |                           |       | ✔ |
-| **XLM/mBERT**      | Facebook        | Jan. 2019 | Multilingual LM           |       | ✔ |
-| **Transf. ELMo**   | AllenNLP        | Jan. 2019 |                           |       |   |
-| **GPT-2**          | OpenAI          | Feb. 2019 | Good text generation      |       | ✔ |
-| **ERNIE**          | Baidu research  | Apr. 2019 |                           |       |    |
-| **XLNet**:         | Google/CMU      | Jun. 2019 | BERT + Transformer-XL               | 130GB | ✔ |
-| **RoBERTa**        | Facebook        | Jul. 2019 | BERT without NSP                    | 160GB | ✔ |
-| **MegatronLM**     | Nvidia          | Aug. 2019 | Big models with parallel training   |       |   |
-| **DistilBERT**     | Hugging Face    | Aug. 2019 | Compressed BERT                     | 16GB  | ✔ |
-| **[MiniBERT](https://arxiv.org/abs/1909.00100)**  | Google   | Aug. 2019  | Compressed BERT  |     |  |
-| **[ALBERT](https://openreview.net/pdf?id=H1eA7AEtvS)** | Google   | Sep. 2019  |  Parameter reduction on BERT  |     |  |
+| Model              | Creator         | Date      | Breif description                                                | 🤗 |
+|:------------------:|:---------------:|:---------:|------------------------------------------------------------------|:---:|
+| **1st Transformer**| Google          | Jun. 2017 | Encoder & decoder transformer with attention                     |    |
+| **ULMFiT**         | Fast.ai         | Jan. 2018 | Regular LSTM                                                     |    |
+| **ELMo**           | AllenNLP        | Feb. 2018 | Bidirectional LSTM                                               |    |
+| **GPT**            | OpenAI          | Jun. 2018 | Transformer on LM                                                | ✔ |
+| **BERT**           | Google          | Oct. 2018 | Transformer on MLM (& NSP)                                       | ✔ |
+| **Transformer-XL** | Google/CMU      | Jan. 2019 |                                                                  | ✔ |
+| **XLM/mBERT**      | Facebook        | Jan. 2019 | Multilingual LM                                                  | ✔ |
+| **Transf. ELMo**   | AllenNLP        | Jan. 2019 |                                                                  |   |
+| **GPT-2**          | OpenAI          | Feb. 2019 | Good text generation                                             | ✔ |
+| **ERNIE**          | Baidu research  | Apr. 2019 |                                                                  |    |
+| **XLNet**          | Google/CMU      | Jun. 2019 | BERT + Transformer-XL                                            | ✔ |
+| **RoBERTa**        | Facebook        | Jul. 2019 | BERT without NSP                                                 | ✔ |
+| **MegatronLM**     | Nvidia          | Aug. 2019 | Big models with parallel training                                |   |
+| **DistilBERT**     | Hugging Face    | Aug. 2019 | Compressed BERT                                                  | ✔ |
+| **[MiniBERT](https://arxiv.org/abs/1909.00100)**       | Google       | Aug. 2019 | Compressed BERT                 |   |
+| **[ALBERT](https://openreview.net/pdf?id=H1eA7AEtvS)** | Google       | Sep. 2019 | Parameter reduction on BERT     |   |
+| **[CTRL](https://arxiv.org/abs/1909.05858)**           | Salesforce   | Sep. 2019 |                                 | ✔ |
+| **DistilBERT**                                         | Hugging Face | Oct. 2019 | Compressed GPT-2                | ✔ |
+
 
 https://huggingface.co/pytorch-transformers/pretrained_models.html
 
@@ -267,6 +272,9 @@ https://huggingface.co/pytorch-transformers/pretrained_models.html
 | **MegatronLM**     |     |     |     |      |      | 355M |      |       | 2500M | 8300M |
 | **DistilBERT**     |     |     | 66M |      |      |      |      |       |       |       |
 | **MiniBERT**       |     | Yes |     |      |      |      |      |       |       |       |
+| **ALBERT**         |     |     |     |      |      |      |      |       |       |       |
+| **CTRL**           |     |     |     |      |      |      |      | 1600M |       |       |
+| **DistilBERT**     |     |     | 82M |      |      |      |      |       |       |       |
   
 - **Attention**: (Aug 2015)
   - Allows the network to refer back to the input sequence, instead of forcing it to encode all information into ane fixed-lenght vector.
