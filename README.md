@@ -229,7 +229,7 @@ coche[0].vector      # Show vector
 
 ![models](img/models.jpg)
 
-🤗 Means availability (pretrained PyTorch implementation) on [transformers](https://github.com/huggingface/transformers) package developed by huggingface.
+🤗 Means availability (pretrained PyTorch implementation) on [**transformers**](https://github.com/huggingface/transformers) package developed by **huggingface**.
 
 | Model              | Creator         | Date      | Breif description                                                | 🤗 |
 |:------------------:|:---------------:|:---------:|------------------------------------------------------------------|:---:|
@@ -250,10 +250,9 @@ coche[0].vector      # Show vector
 | **[MiniBERT](https://arxiv.org/abs/1909.00100)**       | Google       | Aug. 2019 | Compressed BERT                 |   |
 | **[ALBERT](https://openreview.net/pdf?id=H1eA7AEtvS)** | Google       | Sep. 2019 | Parameter reduction on BERT     |   |
 | **[CTRL](https://arxiv.org/abs/1909.05858)**           | Salesforce   | Sep. 2019 |                                 | ✔ |
-| **DistilBERT**                                         | Hugging Face | Oct. 2019 | Compressed GPT-2                | ✔ |
+| **DistilGPT-2**                                        | Hugging Face | Oct. 2019 | Compressed GPT-2                | ✔ |
 
 
-https://huggingface.co/pytorch-transformers/pretrained_models.html
 
 | Model              | 2L  | 3L  | 6L  | 12L  | 18L  | 24L  | 36L  |  48L  |  54L  |  72L  |
 |:------------------:|:---:|:---:|:---:|:----:|:----:|:----:|:----:|:-----:|:-----:|:-----:|
