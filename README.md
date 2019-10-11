@@ -249,8 +249,8 @@ coche[0].vector      # Show vector
 | **DistilBERT**     | Hugging Face    | Aug. 2019 | Compressed BERT                                                  | ✔ |
 | **[MiniBERT](https://arxiv.org/abs/1909.00100)**       | Google       | Aug. 2019 | Compressed BERT                 |   |
 | **[ALBERT](https://openreview.net/pdf?id=H1eA7AEtvS)** | Google       | Sep. 2019 | Parameter reduction on BERT     |   |
-| **[CTRL](https://arxiv.org/abs/1909.05858)**           | Salesforce   | Sep. 2019 |                                 | ✔ |
-| **DistilGPT-2**                                        | Hugging Face | Oct. 2019 | Compressed GPT-2                | ✔ |
+| **[CTRL](https://arxiv.org/abs/1909.05858)** | Salesforce   | Sep. 2019 | Conditional transformer LM for controllable generation | ✔ |
+| **DistilGPT-2**                              | Hugging Face | Oct. 2019 | Compressed GPT-2                | ✔ |
 
 
 
