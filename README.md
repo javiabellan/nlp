@@ -272,7 +272,7 @@ coche[0].vector      # Show vector
 | **DistilBERT**     |     |     | 66M |      |      |      |      |       |       |       |
 | **MiniBERT**       |     | Yes |     |      |      |      |      |       |       |       |
 | **ALBERT**         |     |     |     |      |      |      |      |       |       |       |
-| **CTRL**           |     |     |     |      |      |      |      | 1600M |       |       |
+| **CTRL**           |     |     |     |      |      |      |      | 1630M |       |       |
 | **DistilBERT**     |     |     | 82M |      |      |      |      |       |       |       |
   
 - **Attention**: (Aug 2015)
