@@ -229,7 +229,8 @@ coche[0].vector      # Show vector
 
 ![models](img/models.jpg)
 
-🤗 Means availability (pretrained PyTorch implementation) on [**transformers**](https://github.com/huggingface/transformers) package developed by **huggingface**.
+> ### 🤗 [Huggingface transformers](https://github.com/huggingface/transformers) 
+> Is a package with pretrained transformers models (PyTorch & Tensorflow). Check their [paper](https://arxiv.org/abs/1910.03771)
 
 | Model              | Creator         | Date      | Breif description                                                | 🤗 |
 |:------------------:|:---------------:|:---------:|------------------------------------------------------------------|:---:|
