@@ -1,5 +1,27 @@
 <h1 align="center">Natural Language Processing</h1>
 
+> ### Index
+>
+> ##### [**Theory**](#nlp-theory)
+> 
+> - 🛠 [**Pipeline**](#-pipeline)
+> - 🔮 [**Models**](#-models)
+>   - [**Recurrent**](#recurrent)
+>   - [**Convolutional**](#convolutional)
+>   - [**Self-Attention (Transformers)**](#transformer)
+> - 👨🏻‍🏫 [**Transfer learning**](#pipeline)
+> - 📏 [**Scores**](#scores)
+>
+> ##### [**Applications**](#nlp-applications)
+>
+> - 🔮 [**Language Model**](#language-model)
+> - ❓ [**Clasification**](#clasification)
+> - 🈯 [**Translation**](#translation)
+> - 📋 [**Summarization**](#summarization)
+> - 🤖 [**Chatbot**](#chatbot)
+>
+> [**Resources**](#resources)
+
 |       | Index                                             |                  |
 |-------|---------------------------------------------------|------------------|
 | 📱    | [**Applications**](#-applications)               |  |
@@ -9,35 +31,15 @@
 | 👨🏻‍🏫 | [**Transfer Learning**](#-transfer-learning)     |  |
 | 🤖    | [**Transformers theory**](#-transformers)        |  |
 | 📦    | [**Python Packages**](#-python-packages)         |  |
- 
+| 📦    | [**Python Packages**](#-python-packages)         |  |
+
 
 ---
 
-# 📱 Applications
-
-| Application                           | Description                                                               | Type |
-|---------------------------------------|---------------------------------------------------------------------------|------|
-| 🏷️ **Part-of-speech tagging (POS)**   | Identify if each word is a noun, verb, adjective, etc. (aka Parsing).     | 🔤 |
-| 📍 **Named entity recognition (NER)** | Identify names, organizations, locations, medical codes, time, etc.        | 🔤 |
-| 👦🏻❓ **Coreference Resolution**       | Identify several ocuurences on the same person/objet like he, she         | 🔤 |
-| 🔍 **Text categorization**            | Identify topics present in a text (sports, politics, etc).                | 🔤 |
-| ❓ **Question answering**             | Answer questions of a given text (SQuAD, DROP dataset).                    | 💭 |
-| 👍🏼 👎🏼 **Sentiment analysis**          | Possitive or negative comment/review classification.                       | 💭 |
-| 🔮 **Language Modeling (LM)**          | Predict the next word. Unupervised.                                       | 💭 |
-| 🔮 **Masked Language Modeling (MLM)**  | Predict the omitted words. Unupervised.                                   | 💭 |
-| 🔮 **Next Sentence Prediction (NSP)**  |                                                                          | 💭 |
-| 📗→📄 **Summarization**                | Crate a short version of a text.                                          | 💭 |
-| 🈯→🆗 **Translation**                 | Translate into a different language.                                      | 💭 |
-| 🆓→🆒 **Dialogue bot**                | Interact in a conversation.                                               | 💭 |
-| 💁🏻→🔠 **Speech recognition**          | Speech to text. See [AUDIO](/AUDIO.md) cheatsheet.                        | 🗣️ |
-| 🔠→💁🏻 **Speech generation**           | Text to speech. See [AUDIO](/AUDIO.md) cheatsheet.                        | 🗣️ |
-
-- 🔤: Natural Language Processing (NLP)
-- 💭: Natural Language Understanding (NLU)
-- 🗣️: Speech and sound (speak and listen)
+<h1 align="center">NLP Theory</h1>
 
 
-# 📋 Pipeline
+# 🛠 Pipeline
 
 1. **Preprocess**
    - **Tokenization**: Split the text into sentences and the sentences into words.
@@ -83,149 +85,15 @@
 - **Parse trees**: Syntax od a sentence
 
 
-### Seq2seq
-- Recurent nets
-  - GRU
-  - LSTM
-- Tricks
-  - Teacher forcing: Feed to the decoder the correct previous word, insted of the predicted previous word (at the beggining of training)
-  - Attention: Learns weights to perform a weighted average of the words embeddings.
-
-
-# 🤖 Transformers
-
-### Transformer input
-
-1. **Tokenizer**: Create subword tokens. Methods: BPE...
-2. **Embedding**: Create vectors for each token. Sum of:
-   - **Token Embedding**
-   - **Positional Encoding**: Information about tokens order (e.g. sinusoidal function).
-3. Dropout
-
-### Transformer blocks (6, 12, 24,...)
-
-1. Normalization
-2. **Multi-head attention** layer (with a **left-to-right attention mask**)
-   - Each attention head uses self attention to process each token input conditioned on the other input tokens.
-   - Left-to-right attention mask ensures that only attends to the positions that precede it to the left.
-3. Normalization
-4. **Feed forward** layers:
-   1. Linear H→4H
-   2. GeLU activation func
-   3. Linear 4H→H
-
-### Transformer output
-
-1. Normalization
-2. Output embedding
-3. Softmax
-4. Label smothing: Ground truth -> 90% the correct word, and the rest 10% divided on the other words.
-
-
-- Lowest layers: morphology
-- Middle layers: syntax
-- Highest layers: Task-specific semantics
 
 
 
-# 📏 Scores
-
-| Score          | For what?       | Description                                               | Interpretation         |
-|:--------------:|:---------------:|-----------------------------------------------------------|------------------------|
-| **Perplexity** | **LM**          |                                                           | The lower the better.  |
-| **GLUE**       | **NLU**         | An avergae of different scores                            |                        |
-| **BLEU**       | **Translation** | Compare generated with reference sentences (N-gram)       | The higher the better. |
-
-> #### BLEU limitation
-> "He ate the apple" & "He ate the potato" has the same BLEU score.
-> 
-> [BLEU at your own risk](https://towardsdatascience.com/evaluating-text-output-in-nlp-bleu-at-your-own-risk-e8609665a213)
-
-# 👨🏻‍🏫 Transfer Learning
-
-| Step  | Task                                          | Data                                  | Who do this?           |
-|:-----:|-----------------------------------------------|---------------------------------------|------------------------|
-| **1** | **[Masked] Language Model Pretraining**       | 📚 Lot of text corpus (eg. Wikipedia) | 🏭 Google or Facebook |
-| **2** | **[Masked] Language Model Finetunning**       | 📗 Only you domain text corpus        | 💻 You                |
-| **3** | **Your supervised task (clasification, etc)** | 📗🏷️ You labeled domain text          | 💻 You                |
-
-
-# 📦 Python Packages
-
-| Packages                                         | Description                                                               | Type |
-|:------------------------------------------------:|---------------------------------------------------------------------------|------|
-| <img src="img/logo/spacy.png" height="40">       | Parse trees, execelent tokenizer (8 languages)                            | 🔤 |
-| <img src="img/logo/gensim.jpg" height="30">      | Semantic analysis, topic modeling and similarity detection.               | 🔤 |
-| <h3>NLTK</h3>                                    | Very broad NLP library. Not SotA.                                         | 🔤 |
-| <h3>SentencePiece</h3>                           | Unsupervised text tokenizer by Google                                     | 🔤 |
-| <img src="img/logo/fastai.png" height="50">      | Fast.ai NLP: ULMFiT fine-tuning                                           | 🔤 |
-| <img src="img/logo/pytorch.png" height="30">     | TorchText (Pytorch subpackage)                                            | 🔤 |
-| <img src="img/logo/fasttext.png" height="50">    | Word vector representations and sentence classification (157 languages)   | 🔤 |
-| <img src="img/logo/huggingface.png" height="50"> | pytorch-transformers: 8 pretrained Pytorch transformers                   | 🔤 |
-| <img  src="img/logo/spacy.png" height="30">+<img src="img/logo/huggingface.png" height="40"> | SpaCy + pytorch-transformers  | 🔤 |
-| <h3>fast-bert</h3>                               | Super easy library for BERT based models                                  | 🔤 |
-| <img src="img/logo/stanfordnlp.jpg" height="50"> | Pretrained models for 53 languages                                        | 🔤 |
-| <h3>PyText</h3>                                  |                                                                           | 🔤 |
-| <img src="img/logo/allennlp.png" height="20">    | An open-source NLP research library, built on PyTorch.                    | 🔤 |
-| <img src="img/logo/farm.png" height="40">        | Fast & easy NLP transfer learning for the industry.                       | 🔤 |
-| <img src="img/logo/transfernlp.jpg" height="30"> | NLP library designed for reproducible experimentation management.         | 🔤 |
-| <img src="img/logo/flair.png" height="40">       | A very simple framework for state-of-the-art NLP.                         | 🔤 |
-| <img src="img/logo/nlparchitect.png" height="30">| SotA NLP deep learning topologies and techniques.                         | 🔤 |
-| <img src="img/logo/finetune.png" height="30">    | Scikit-learn style model finetuning for NLP.                              | 🔤 |
 
 
 
-<h1><img height="50" src="img/logo/spacy.png"></h1>
-
-### Installation
-
-```bash
-pip install spacy
-python -m spacy download en_core_web_sm
-python -m spacy download es_core_news_sm
-python -m spacy download es_core_news_md
-```
-
-### Usage
-
-```python
-import spacy
-
-nlp = spacy.load("en_core_web_sm")  # Load English small model
-nlp = spacy.load("es_core_news_sm") # Load Spanish small model without Word2Vec
-nlp = spacy.load('es_core_news_md') # Load Spanish medium model with Word2Vec
-
-
-text = nlp("Hola, me llamo Javi")   # Text from string
-text = nlp(open("file.txt").read()) # Text from file
-
-
-spacy.displacy.render(text, style='ent', jupyter=True)  # Display text entities
-spacy.displacy.render(text, style='dep', jupyter=True)  # Display word dependencies
-```
-
-### Word2Vect
-
-`es_core_news_md` has 534k keys, 20k unique vectors (50 dimensions)
-
-```python
-coche = nlp("coche")
-moto  = nlp("moto")
-print(coche.similarity(moto)) # Similarity based on cosine distance
-
-coche[0].vector      # Show vector
-```
-
-
-
-# 🔮 Deep Learning Models
+# 🔮 Models
 
 > ### [ALL MODELS](https://github.com/thunlp/PLMpapers)
-
-- Recurrent
-- Convolution
-  - [Lightweight and Dynamic Convolutions](https://arxiv.org/abs/1901.10430)
-- Attention (transformers)
 
 ![models](img/models.jpg)
 
@@ -276,6 +144,7 @@ coche[0].vector      # Show vector
 | **ALBERT**         |     |     |     |      |      |      |      |       |       |       |
 | **CTRL**           |     |     |     |      |      |      |      | 1630M |       |       |
 | **DistilBERT**     |     |     | 82M |      |      |      |      |       |       |       |
+  
   
 - **Attention**: (Aug 2015)
   - Allows the network to refer back to the input sequence, instead of forcing it to encode all information into ane fixed-lenght vector.
@@ -372,27 +241,114 @@ coche[0].vector      # Show vector
   - Parameters: 66 millions
   
 
+# 🔮 Recurrent models
 
-## Fast.ai NLP Videos
-1. [What is NLP?](https://youtu.be/cce8ntxP_XI) ✔
-2. [Topic Modeling with SVD & NMF](https://youtu.be/tG3pUwmGjsc)
-3. [Topic Modeling & SVD revisited](https://youtu.be/lRZ4aMaXPBI)
-4. [Sentiment Classification with Naive Bayes](https://youtu.be/hp2ipC5pW4I)
-5. [Sentiment Classification with Naive Bayes & Logistic Regression, contd.](https://youtu.be/dt7sArnLo1g)
-6. [Derivation of Naive Bayes & Numerical Stability](https://youtu.be/z8-Tbrg1-rE)
-7. [Revisiting Naive Bayes, and Regex](https://youtu.be/Q1zLqfnEXdw)
-8. [Intro to Language Modeling](https://youtu.be/PNNHaQUQqW8)
-9. [Transfer learning](https://youtu.be/5gCQvuznKn0)
-10. [ULMFit for non-English Languages](https://youtu.be/MDX_x6rKXAs)
-11. [Understanding RNNs](https://youtu.be/l1rlFh0PmZw)
-12. [Seq2Seq Translation](https://youtu.be/IfsjMg4fLWQ)
-13. [Word embeddings quantify 100 years of gender & ethnic stereotypes](https://youtu.be/boxV8Od4jqQ)
-14. [Text generation algorithms](https://youtu.be/3oEb_fFmPnY)
-15. [Implementing a GRU](https://youtu.be/Bl6WVj6wQaE)
-16. [Algorithmic Bias](https://youtu.be/pThqge9QDn8)
-17. [Introduction to the Transformer](https://youtu.be/AFkGPmU16QA) ✔
-18. [The Transformer for language translation](https://youtu.be/KzfyftiH7R8) ✔
-19. [What you need to know about Disinformation](https://youtu.be/vbva2RN-rbQ)
+- GRU
+- LSTM
+- Tricks
+  - Teacher forcing: Feed to the decoder the correct previous word, insted of the predicted previous word (at the beggining of training)
+  - Attention: Learns weights to perform a weighted average of the words embeddings.
+  
+
+# 🔮 Convolutional models
+[Lightweight and Dynamic Convolutions](https://arxiv.org/abs/1901.10430)
+
+
+# 🔮 Self-Attention models (Transformers)
+
+#### Transformer input
+1. **Tokenizer**: Create subword tokens. Methods: BPE...
+2. **Embedding**: Create vectors for each token. Sum of:
+   - **Token Embedding**
+   - **Positional Encoding**: Information about tokens order (e.g. sinusoidal function).
+3. Dropout
+
+#### Transformer blocks (6, 12, 24,...)
+1. Normalization
+2. **Multi-head attention** layer (with a **left-to-right attention mask**)
+   - Each attention head uses self attention to process each token input conditioned on the other input tokens.
+   - Left-to-right attention mask ensures that only attends to the positions that precede it to the left.
+3. Normalization
+4. **Feed forward** layers:
+   1. Linear H→4H
+   2. GeLU activation func
+   3. Linear 4H→H
+
+#### Transformer output
+1. Normalization
+2. Output embedding
+3. Softmax
+4. Label smothing: Ground truth -> 90% the correct word, and the rest 10% divided on the other words.
+
+
+- Lowest layers: morphology
+- Middle layers: syntax
+- Highest layers: Task-specific semantics
+
+
+
+# 👨🏻‍🏫 Transfer Learning
+
+| Step  | Task                                          | Data                                  | Who do this?           |
+|:-----:|-----------------------------------------------|---------------------------------------|------------------------|
+| **1** | **[Masked] Language Model Pretraining**       | 📚 Lot of text corpus (eg. Wikipedia) | 🏭 Google or Facebook |
+| **2** | **[Masked] Language Model Finetunning**       | 📗 Only you domain text corpus        | 💻 You                |
+| **3** | **Your supervised task (clasification, etc)** | 📗🏷️ You labeled domain text          | 💻 You                |
+
+
+# 📏 Scores
+
+| Score          | For what?       | Description                                               | Interpretation         |
+|:--------------:|:---------------:|-----------------------------------------------------------|------------------------|
+| **Perplexity** | **LM**          |                                                           | The lower the better.  |
+| **GLUE**       | **NLU**         | An avergae of different scores                            |                        |
+| **BLEU**       | **Translation** | Compare generated with reference sentences (N-gram)       | The higher the better. |
+
+> #### BLEU limitation
+> "He ate the apple" & "He ate the potato" has the same BLEU score.
+> 
+> [BLEU at your own risk](https://towardsdatascience.com/evaluating-text-output-in-nlp-bleu-at-your-own-risk-e8609665a213)
+
+
+
+
+
+
+
+
+---
+<h1 align="center">NLP Applications</h1>
+
+| Application                           | Description                                                               | Type |
+|---------------------------------------|---------------------------------------------------------------------------|------|
+| 🏷️ **Part-of-speech tagging (POS)**   | Identify if each word is a noun, verb, adjective, etc. (aka Parsing).     | 🔤 |
+| 📍 **Named entity recognition (NER)** | Identify names, organizations, locations, medical codes, time, etc.        | 🔤 |
+| 👦🏻❓ **Coreference Resolution**       | Identify several ocuurences on the same person/objet like he, she         | 🔤 |
+| 🔍 **Text categorization**            | Identify topics present in a text (sports, politics, etc).                | 🔤 |
+| ❓ **Question answering**             | Answer questions of a given text (SQuAD, DROP dataset).                    | 💭 |
+| 👍🏼 👎🏼 **Sentiment analysis**          | Possitive or negative comment/review classification.                       | 💭 |
+| 🔮 **Language Modeling (LM)**          | Predict the next word. Unupervised.                                       | 💭 |
+| 🔮 **Masked Language Modeling (MLM)**  | Predict the omitted words. Unupervised.                                   | 💭 |
+| 🔮 **Next Sentence Prediction (NSP)**  |                                                                          | 💭 |
+| 📗→📄 **Summarization**                | Crate a short version of a text.                                          | 💭 |
+| 🈯→🆗 **Translation**                 | Translate into a different language.                                      | 💭 |
+| 🆓→🆒 **Chatbot**                     | Interact in a conversation.                                               | 💭 |
+| 💁🏻→🔠 **Speech recognition**          | Speech to text. See [AUDIO](/AUDIO.md) cheatsheet.                        | 🗣️ |
+| 🔠→💁🏻 **Speech generation**           | Text to speech. See [AUDIO](/AUDIO.md) cheatsheet.                        | 🗣️ |
+
+- 🔤: Natural Language Processing (NLP)
+- 💭: Natural Language Understanding (NLU)
+- 🗣️: Speech and sound (speak and listen)
+
+
+
+# 🤖 Chatbot
+
+> ### [Huggingface SotA chatbot](https://medium.com/huggingface/how-to-build-a-state-of-the-art-conversational-ai-with-transfer-learning-2d818ac26313)
+
+---
+
+
 
 
   
@@ -434,3 +390,23 @@ coche[0].vector      # Show vector
 - [7 NLP libraries](https://medium.com/microsoftazure/7-amazing-open-source-nlp-tools-to-try-with-notebooks-in-2019-c9eec058d9f1)
 - [spaCy blog](https://explosion.ai/blog)
 - [Attention and Memory](http://www.wildml.com/2016/01/attention-and-memory-in-deep-learning-and-nlp/)
+- Fast.ai NLP Videos
+  1. [What is NLP?](https://youtu.be/cce8ntxP_XI) ✔
+  2. [Topic Modeling with SVD & NMF](https://youtu.be/tG3pUwmGjsc)
+  3. [Topic Modeling & SVD revisited](https://youtu.be/lRZ4aMaXPBI)
+  4. [Sentiment Classification with Naive Bayes](https://youtu.be/hp2ipC5pW4I)
+  5. [Sentiment Classification with Naive Bayes & Logistic Regression, contd.](https://youtu.be/dt7sArnLo1g)
+  6. [Derivation of Naive Bayes & Numerical Stability](https://youtu.be/z8-Tbrg1-rE)
+  7. [Revisiting Naive Bayes, and Regex](https://youtu.be/Q1zLqfnEXdw)
+  8. [Intro to Language Modeling](https://youtu.be/PNNHaQUQqW8)
+  9. [Transfer learning](https://youtu.be/5gCQvuznKn0)
+  10. [ULMFit for non-English Languages](https://youtu.be/MDX_x6rKXAs)
+  11. [Understanding RNNs](https://youtu.be/l1rlFh0PmZw)
+  12. [Seq2Seq Translation](https://youtu.be/IfsjMg4fLWQ)
+  13. [Word embeddings quantify 100 years of gender & ethnic stereotypes](https://youtu.be/boxV8Od4jqQ)
+  14. [Text generation algorithms](https://youtu.be/3oEb_fFmPnY)
+  15. [Implementing a GRU](https://youtu.be/Bl6WVj6wQaE)
+  16. [Algorithmic Bias](https://youtu.be/pThqge9QDn8)
+  17. [Introduction to the Transformer](https://youtu.be/AFkGPmU16QA) ✔
+  18. [The Transformer for language translation](https://youtu.be/KzfyftiH7R8) ✔
+  19. [What you need to know about Disinformation](https://youtu.be/vbva2RN-rbQ)
