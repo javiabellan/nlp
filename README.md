@@ -18,7 +18,7 @@
 > - ❓ [**Clasification**](#clasification)
 > - 🈯 [**Translation**](#translation)
 > - 📋 [**Summarization**](#summarization)
-> - 🤖 [**Chatbot**](#chatbot)
+> - 🤖 [**Chatbot**](#-chatbot)
 >
 > [**Resources**](#resources)
 
@@ -343,15 +343,24 @@
 > ### [Huggingface SotA chatbot](https://medium.com/huggingface/how-to-build-a-state-of-the-art-conversational-ai-with-transfer-learning-2d818ac26313)
 
 
-- Model backbone: LM like **GPT** or **GPT2** are better than MLM like Bert
-- **Input data** that the model needs:
-  1. One or several persona sentences (personality) (BLUE)
-  2. The history of the dialog. (PINK)
-  3. The tokens of the current answer (GREEN)
-- **Double Heads Model** is necesary for multi-task loss
-  - One head for language modeling loss.
-  - Other head for next-sentence classification loss.
+Model backbone: Casual transformer pretrained for LM. **GPT** or **GPT2** are better than MLM mode like Bert.
 
+### Input data
+1. **Persona**: One or several persona sentences (personality) (BLUE)
+2. **History**: The history of the dialog. (PINK)
+3. **Reply**: The tokens of the current answer (GREEN)
+![](img/chatbot1.png)
+
+### Embeddings
+- **Word embedding**: Information about word semantics.
+- **Position embedding**: Information about word order.
+- **Segment embedding**: nformation about type (personality, history or reply).
+![](img/chatbot2.png)
+
+### Double Heads Model for multi-task loss
+- One head for language modeling loss.
+- Other head for next-sentence classification loss.
+![](img/chatbot3.png)
 
 ---
 
