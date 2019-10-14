@@ -346,9 +346,9 @@
 Model backbone: Casual transformer pretrained for LM. **GPT** or **GPT2** are better than MLM mode like Bert.
 
 ### Input data
-1. **Persona**: One or several persona sentences (personality) (BLUE)
+1. **Persona**: One or several personality sentences. (BLUE)
 2. **History**: The history of the dialog. (PINK)
-3. **Reply**: The tokens of the current answer (GREEN)
+3. **Reply**: The tokens of the current answer. (GREEN)
 ![](img/chatbot1.png)
 
 ### Embeddings
