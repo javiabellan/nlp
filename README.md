@@ -284,6 +284,13 @@
 | **3** | **Your supervised task (clasification, etc)** | 📗🏷️ You labeled domain text          | 💻 You                |
 
 
+# Losses
+
+- **Language modeling**: we project the hidden-state on the word embedding matrix to get logits and apply a cross-entropy loss on the portion of the target corresponding to the gold reply.
+- **Next-sentence prediction**: we pass the hidden-state of the last token (the end-of-sequence token) through a linear layer to get a score and apply a cross-entropy loss to classify correctly a gold answer among distractors.
+
+ 
+ 
 # 📏 Scores
 
 | Score          | For what?       | Description                                               | Interpretation         |
@@ -334,6 +341,17 @@
 # 🤖 Chatbot
 
 > ### [Huggingface SotA chatbot](https://medium.com/huggingface/how-to-build-a-state-of-the-art-conversational-ai-with-transfer-learning-2d818ac26313)
+
+
+- Model backbone: LM like **GPT** or **GPT2** are better than MLM like Bert
+- **Input data** that the model needs:
+  1. One or several persona sentences (personality) (BLUE)
+  2. The history of the dialog. (PINK)
+  3. The tokens of the current answer (GREEN)
+- **Double Heads Model** is necesary for multi-task loss
+  - One head for language modeling loss.
+  - Other head for next-sentence classification loss.
+
 
 ---
 
