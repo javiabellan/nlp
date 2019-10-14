@@ -9,7 +9,7 @@
 >   - [**Recurrent**](#recurrent)
 >   - [**Convolutional**](#convolutional)
 >   - [**Self-Attention (Transformers)**](#transformer)
-> - 👨🏻‍🏫 [**Transfer learning**](#pipeline)
+> - 👨🏻‍🏫 [**Transfer Learning**](#pipeline)
 > - 📏 [**Scores**](#scores)
 >
 > ##### [**Applications**](#nlp-applications)
@@ -21,18 +21,6 @@
 > - 🤖 [**Chatbot**](#chatbot)
 >
 > [**Resources**](#resources)
-
-|       | Index                                             |                  |
-|-------|---------------------------------------------------|------------------|
-| 📱    | [**Applications**](#-applications)               |  |
-| 📋    | [**Pipeline**](#-pipeline)                       |  |
-| 🔮    | [**Models**](#-deep-learning-models)             |  |
-| 📏    | [**Scores**](#-scores)                           |  |
-| 👨🏻‍🏫 | [**Transfer Learning**](#-transfer-learning)     |  |
-| 🤖    | [**Transformers theory**](#-transformers)        |  |
-| 📦    | [**Python Packages**](#-python-packages)         |  |
-| 📦    | [**Python Packages**](#-python-packages)         |  |
-
 
 ---
 
