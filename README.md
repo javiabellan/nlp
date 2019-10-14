@@ -321,8 +321,8 @@
 
 | Application                           | Description                                                               | Type |
 |---------------------------------------|---------------------------------------------------------------------------|------|
-| 🏷️ **Part-of-speech tagging (POS)**   | Identify if each word is a noun, verb, adjective, etc. (aka Parsing).     | 🔤 |
-| 📍 **Named entity recognition (NER)** | Identify names, organizations, locations, medical codes, time, etc.        | 🔤 |
+| 🏷️ **Part-of-speech tagging (POS)**   | Identify nouns, verbs, adjectives, etc. (aka Parsing).                    | 🔤 |
+| 📍 **Named entity recognition (NER)** | Identify names, organizations, locations, medical codes, etc.             | 🔤 |
 | 👦🏻❓ **Coreference Resolution**       | Identify several ocuurences on the same person/objet like he, she         | 🔤 |
 | 🔍 **Text categorization**            | Identify topics present in a text (sports, politics, etc).                | 🔤 |
 | ❓ **Question answering**             | Answer questions of a given text (SQuAD, DROP dataset).                    | 💭 |
