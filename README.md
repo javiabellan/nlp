@@ -2,17 +2,17 @@
 
 > ### Index
 >
-> ##### [**Theory**](#nlp-theory)
+> ##### [**Theory**](#theory)
 > 
 > - 🛠 [**Pipeline**](#-pipeline)
 > - 🔮 [**Models**](#-models)
 >   - [**Recurrent**](#recurrent)
 >   - [**Convolutional**](#convolutional)
->   - [**Self-Attention (Transformers)**](#transformer)
+>   - [**Self-Attention (Transformers)**](#-self-attention-models-transformers)
 > - 👨🏻‍🏫 [**Transfer Learning**](#pipeline)
 > - 📏 [**Scores**](#scores)
 >
-> ##### [**Applications**](#nlp-applications)
+> ##### [**Applications**](#applications)
 >
 > - 🔮 [**Language Model**](#language-model)
 > - ❓ [**Clasification**](#clasification)
@@ -24,7 +24,7 @@
 
 ---
 
-<h1 align="center">NLP Theory</h1>
+<h3 align="center">Theory</h3>
 
 
 # 🛠 Pipeline
@@ -305,7 +305,8 @@
 
 
 ---
-<h1 align="center">NLP Applications</h1>
+<h3 align="center">Applications</h3>
+
 
 | Application                           | Description                                                               | Type |
 |---------------------------------------|---------------------------------------------------------------------------|------|
