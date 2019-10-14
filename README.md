@@ -10,7 +10,8 @@
 >   - [**Convolutional**](#convolutional)
 >   - [**Self-Attention (Transformers)**](#-self-attention-models-transformers)
 > - 👨🏻‍🏫 [**Transfer Learning**](#pipeline)
-> - 📏 [**Scores**](#scores)
+> - 📉 [**Losses**](#-losses)
+> - 📏 [**Metrics**](#-metrics)
 >
 > ##### [**Applications**](#applications)
 >
@@ -284,14 +285,14 @@
 | **3** | **Your supervised task (clasification, etc)** | 📗🏷️ You labeled domain text          | 💻 You                |
 
 
-# Losses
+# 📉 Losses
 
 - **Language modeling**: we project the hidden-state on the word embedding matrix to get logits and apply a cross-entropy loss on the portion of the target corresponding to the gold reply.
 - **Next-sentence prediction**: we pass the hidden-state of the last token (the end-of-sequence token) through a linear layer to get a score and apply a cross-entropy loss to classify correctly a gold answer among distractors.
 
  
  
-# 📏 Scores
+# 📏 Metrics
 
 | Score          | For what?       | Description                                               | Interpretation         |
 |:--------------:|:---------------:|-----------------------------------------------------------|------------------------|
