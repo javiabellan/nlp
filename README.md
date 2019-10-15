@@ -374,8 +374,9 @@ Model backbone: Casual transformer pretrained for LM. **GPT** or **GPT2** are be
   
 # References
 
-- **TO-DO read**: 
-  - Read [MASS](https://www.microsoft.com/en-us/research/blog/introducing-mass-a-pre-training-method-that-outperforms-bert-and-gpt-in-sequence-to-sequence-language-generation-tasks) (transfer learning in translation for transformers?)
+- **TO-DO read**:
+  - Read [NLP, Recent Trends](https://medium.com/dair-ai/deep-learning-for-nlp-an-overview-of-recent-trends-d0d8f40a776d) (August 2019) ⭐
+  - Read [MASS](https://www.microsoft.com/en-us/research/blog/introducing-mass-a-pre-training-method-that-outperforms-bert-and-gpt-in-sequence-to-sequence-language-generation-tasks): transfer learning in translation for transformers?
   - Read [CNNs better than attention](https://arxiv.org/abs/1901.10430)
 - **Modern NLP**
   - [NLP-progress](https://nlpprogress.com)
