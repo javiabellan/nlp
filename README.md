@@ -249,10 +249,16 @@
 |--------------|------------------------------------------|------------------------------------------|
 |              | <img width="200" src="img/encoder.png"/> | <img width="200" src="img/decoder.png"/> |
 | Original     | Transformer encoder                      | Transformer decoder                      |
+| Advantage    | Context on both sides                    | Auto-Regression                          |
 | Pretraining  | Bidirectional LM                         | Unidirectional LM                        |
 | Examples     | **BERT**                                 | **GPT**, **GPT-2**                       |
 | Applications | Clasification                            | Text generation                          |
 
+> #### Notes
+> - **Auto-Regression** is when the final output token becomes input.
+> - **Original transformer** combines both encoder and decoder, (is the only transformer doing this).
+> - **Transformer-XL** is a recurrent transformer decoder.
+> - **XLNet** has both Context on both sides and Auto-Regression.
 
 #### Transformer input
 1. **Tokenizer**: Create subword tokens. Methods: BPE...
