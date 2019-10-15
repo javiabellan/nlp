@@ -250,7 +250,7 @@
 
 | Self-Attention                   | Masked Self-Attention            |
 |----------------------------------|----------------------------------|
-| ![](img/encoder.png)             | ![](img/decoder.png)             |
+| <p align="center"><img width="200" src="img/encoder.png"/></p> | <p align="center"><img width="200" src="img/decoder.png"/></p> |
 | The original transformer encoder | The original transformer decoder |
 | BERT                             | GPT, GPT-2                       |
 | For LM pretraining               | For Text generation              |
