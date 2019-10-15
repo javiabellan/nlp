@@ -347,7 +347,7 @@
 > ### [Huggingface SotA chatbot](https://medium.com/huggingface/how-to-build-a-state-of-the-art-conversational-ai-with-transfer-learning-2d818ac26313)
 
 
-Model backbone: Casual transformer pretrained for LM. **GPT** or **GPT2** are better than MLM mode like Bert.
+Model backbone: Transformer decoder like **GPT** or **GPT2** (pretrained for LM).
 
 ### Input data
 1. **Persona**: One or several personality sentences. (BLUE)
