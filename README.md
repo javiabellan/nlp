@@ -5,7 +5,7 @@
 > ##### [**Theory**](#theory)
 > 
 > - 🛠 [**Pipeline**](#-pipeline)
-> - 🔮 [**Models**](#-models)
+> - 🔮 Models
 >   - [**Recurrent**](#-recurrent-models)
 >   - [**Convolutional**](#-convolutional-models)
 >   - [**Transformers**](#-transformers-models)
@@ -75,14 +75,37 @@
 
 
 
+# 🔮 Recurrent models
+
+- GRU
+- LSTM
+- Tricks
+  - Teacher forcing: Feed to the decoder the correct previous word, insted of the predicted previous word (at the beggining of training)
+  - Attention: Learns weights to perform a weighted average of the words embeddings.
+  
+
+# 🔮 Convolutional models
+[Lightweight and Dynamic Convolutions](https://arxiv.org/abs/1901.10430)
 
 
+# 🔮 Transformers models
+
+|              | Self-Attention</br>(Transformer Encoder) | Masked Self-Attention</br>(Transformer Decoder) |
+|--------------|------------------------------------------|------------------------------------------|
+|              | <img width="200" src="img/encoder.png"/> | <img width="200" src="img/decoder.png"/> |
+| Advantage    | Context on both sides                    | Auto-Regression                          |
+| Pretraining  | Bidirectional LM                         | Unidirectional LM                        |
+| Examples     | **BERT**                                 | **GPT**, **GPT-2**                       |
+| Applications | **Clasification**                        | **Text generation**                      |
+
+> #### Notes
+> - **Auto-Regression** is when the final output token becomes input.
+> - **Original transformer** combines both encoder and decoder, (is the only transformer doing this).
+> - **Transformer-XL** is a recurrent transformer decoder.
+> - **XLNet** has both Context on both sides and Auto-Regression.
 
 
-
-# 🔮 Models
-
-> ### [ALL MODELS](https://github.com/thunlp/PLMpapers)
+### [ALL Transformers](https://github.com/thunlp/PLMpapers)
 
 ![models](img/models.jpg)
 
@@ -90,7 +113,7 @@
 > Is a package with pretrained transformers models (PyTorch & Tensorflow). Check their [paper](https://arxiv.org/abs/1910.03771)
 
 | Model              | Creator         | Date      | Breif description                                                | 🤗 |
-|:------------------:|:---------------:|:---------:|------------------------------------------------------------------|:---:|
+|:------------------:|:---------------:|:---------:|------------------------------------------------------------------|:--:|
 | **1st Transformer**| Google          | Jun. 2017 | Encoder & decoder transformer with attention                     |    |
 | **ULMFiT**         | Fast.ai         | Jan. 2018 | Regular LSTM                                                     |    |
 | **ELMo**           | AllenNLP        | Feb. 2018 | Bidirectional LSTM                                               |    |
@@ -230,34 +253,7 @@
   - Parameters: 66 millions
   
 
-# 🔮 Recurrent models
-
-- GRU
-- LSTM
-- Tricks
-  - Teacher forcing: Feed to the decoder the correct previous word, insted of the predicted previous word (at the beggining of training)
-  - Attention: Learns weights to perform a weighted average of the words embeddings.
-  
-
-# 🔮 Convolutional models
-[Lightweight and Dynamic Convolutions](https://arxiv.org/abs/1901.10430)
-
-
-# 🔮 Transformers models
-
-|              | Self-Attention</br>(Transformer Encoder) | Masked Self-Attention</br>(Transformer Decoder) |
-|--------------|------------------------------------------|------------------------------------------|
-|              | <img width="200" src="img/encoder.png"/> | <img width="200" src="img/decoder.png"/> |
-| Advantage    | Context on both sides                    | Auto-Regression                          |
-| Pretraining  | Bidirectional LM                         | Unidirectional LM                        |
-| Examples     | **BERT**                                 | **GPT**, **GPT-2**                       |
-| Applications | **Clasification**                        | **Text generation**                      |
-
-> #### Notes
-> - **Auto-Regression** is when the final output token becomes input.
-> - **Original transformer** combines both encoder and decoder, (is the only transformer doing this).
-> - **Transformer-XL** is a recurrent transformer decoder.
-> - **XLNet** has both Context on both sides and Auto-Regression.
+## Transformer architecture
 
 #### Transformer input
 1. **Tokenizer**: Create subword tokens. Methods: BPE...
