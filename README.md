@@ -6,9 +6,9 @@
 > 
 > - 🛠 [**Pipeline**](#-pipeline)
 > - 🔮 [**Models**](#-models)
->   - [**Recurrent**](#recurrent)
->   - [**Convolutional**](#convolutional)
->   - [**Self-Attention (Transformers)**](#-self-attention-models-transformers)
+>   - [**Recurrent**](#-recurrent-models)
+>   - [**Convolutional**](#-convolutional-models)
+>   - [**Transformers**](#-transformers-models)
 > - 👨🏻‍🏫 [**Transfer Learning**](#pipeline)
 > - 📉 [**Losses**](#-losses)
 > - 📏 [**Metrics**](#-metrics)
@@ -243,7 +243,18 @@
 [Lightweight and Dynamic Convolutions](https://arxiv.org/abs/1901.10430)
 
 
-# 🔮 Self-Attention models (Transformers)
+# 🔮 Transformers models
+
+
+2 types:
+
+| Self-Attention                   | Masked Self-Attention            |
+|----------------------------------|----------------------------------|
+| ![](img/encoder.png)             | ![](img/decoder.png)             |
+| The original transformer encoder | The original transformer decoder |
+| BERT                             | GPT, GPT-2                       |
+| For LM pretraining               | For Text generation              |
+
 
 #### Transformer input
 1. **Tokenizer**: Create subword tokens. Methods: BPE...
