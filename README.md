@@ -112,27 +112,27 @@
 > ### 🤗 [Huggingface transformers](https://github.com/huggingface/transformers) 
 > Is a package with pretrained transformers models (PyTorch & Tensorflow). Check their [paper](https://arxiv.org/abs/1910.03771)
 
-| Model              | Creator         | Date      | Breif description                                                | 🤗 |
-|:------------------:|:---------------:|:---------:|------------------------------------------------------------------|:--:|
-| **1st Transformer**| Google          | Jun. 2017 | Encoder & decoder transformer with attention                     |    |
-| **ULMFiT**         | Fast.ai         | Jan. 2018 | Regular LSTM                                                     |    |
-| **ELMo**           | AllenNLP        | Feb. 2018 | Bidirectional LSTM                                               |    |
-| **GPT**            | OpenAI          | Jun. 2018 | Transformer on LM                                                | ✔ |
-| **BERT**           | Google          | Oct. 2018 | Transformer on MLM (& NSP)                                       | ✔ |
-| **Transformer-XL** | Google/CMU      | Jan. 2019 |                                                                  | ✔ |
-| **XLM/mBERT**      | Facebook        | Jan. 2019 | Multilingual LM                                                  | ✔ |
-| **Transf. ELMo**   | AllenNLP        | Jan. 2019 |                                                                  |   |
-| **GPT-2**          | OpenAI          | Feb. 2019 | Good text generation                                             | ✔ |
-| **ERNIE**          | Baidu research  | Apr. 2019 |                                                                  |    |
-| **XLNet**          | Google/CMU      | Jun. 2019 | BERT + Transformer-XL                                            | ✔ |
-| **RoBERTa**        | Facebook        | Jul. 2019 | BERT without NSP                                                 | ✔ |
-| **MegatronLM**     | Nvidia          | Aug. 2019 | Big models with parallel training                                |   |
-| **DistilBERT**     | Hugging Face    | Aug. 2019 | Compressed BERT                                                  | ✔ |
-| **[MiniBERT](https://arxiv.org/abs/1909.00100)**       | Google       | Aug. 2019 | Compressed BERT                 |   |
-| **[MultiFiT](https://arxiv.org/abs/1909.04761)**       | Fast.ai      | Sep. 2019 | Multi-lingual ULMFiT            |   |
-| **[ALBERT](https://openreview.net/pdf?id=H1eA7AEtvS)** | Google       | Sep. 2019 | Parameter reduction on BERT     |   |
-| **[CTRL](https://arxiv.org/abs/1909.05858)** | Salesforce   | Sep. 2019 | Conditional transformer LM for controllable generation | ✔ |
-| **DistilGPT-2**                              | Hugging Face | Oct. 2019 | Compressed GPT-2                | ✔ |
+| Model                                                 | Creator   | Date      | Breif description                   | 🤗 |
+|:-----------------------------------------------------:|:---------:|:---------:|-------------------------------------|:--:|
+| [**1st Transfor.**](https://arxiv.org/abs/1706.03762) | Google    | Jun. 2017 | Transforer encoder & decoder        |    |
+| [**ULMFiT**](https://arxiv.org/abs/1801.06146)        | Fast.ai   | Jan. 2018 | Regular LSTM                        |    |
+| [**ELMo**](https://arxiv.org/abs/1802.05365)          | AllenNLP  | Feb. 2018 | Bidirectional LSTM                  |    |
+| **GPT**                                               | OpenAI    | Jun. 2018 | Transformer decoder on LM           | ✔  |
+| [**BERT**](https://arxiv.org/abs/1810.04805)          | Google    | Oct. 2018 | Transformer encoder on MLM (& NSP)  | ✔  |
+| [**TransformerXL**](https://arxiv.org/abs/1901.02860) | Google    | Jan. 2019 | Recurrent transformer decoder       | ✔  |
+| [**XLM/mBERT**](https://arxiv.org/abs/1901.07291)     | Facebook  | Jan. 2019 | Multilingual LM                     | ✔  |
+| **Transf. ELMo**                                      | AllenNLP  | Jan. 2019 |                                     |    |
+| **GPT-2**                                             | OpenAI    | Feb. 2019 | Good text generation                | ✔  |
+| [**ERNIE**](https://arxiv.org/abs/1904.09223)         | Baidu     | Apr. 2019 |                                     |    |
+| [**XLNet**](https://arxiv.org/abs/1906.08237)         | Google    | Jun. 2019 | BERT + Transformer-XL               | ✔ |
+| [**RoBERTa**](https://arxiv.org/abs/1907.11692)       | Facebook  | Jul. 2019 | BERT without NSP                    | ✔ |
+| **DistilBERT**                                        | Hug. Face | Aug. 2019 | Compressed BERT                     | ✔ |
+| [**MiniBERT**](https://arxiv.org/abs/1909.00100)      | Google    | Aug. 2019 | Compressed BERT                     |   |
+| [**MultiFiT**](https://arxiv.org/abs/1909.04761)      | Fast.ai   | Sep. 2019 | Multi-lingual ULMFiT                |   |
+| [**MegatronLM**](https://arxiv.org/abs/1909.08053)    | Nvidia    | Sep. 2019 | Big models with parallel training   |   |
+| [**ALBERT**](https://openreview.net/pdf?id=H1eA7AEtvS) | Google   | Sep. 2019 | Parameter reduction on BERT         |   |
+| [**CTRL**](https://arxiv.org/abs/1909.05858)          | Salesforce| Sep. 2019 | Controllable text generation        | ✔ |
+| **DistilGPT-2**                                       | Hug. Face | Oct. 2019 | Compressed GPT-2                    | ✔ |
 
 
 
@@ -243,14 +243,6 @@
     - RoBERTa-Large: 355 millions
   - Trained on 160GB of text
   - Paper [RoBERTa: A Robustly Optimized BERT Pretraining Approach](https://arxiv.org/abs/1907.11692)
-- **MegatronLM** (Nvidia, Aug. 2019)
-  - Too big
-  - Parameters: 8300 millions
-- **DistilBERT** (Hugging Face, Aug. 2019)
-  - Compression of BERT with Knowledge distillation (teacher-student learning)
-  - A small model (DistilBERT) is trained with the output of a larger model (BERT)
-  - Comparable results to BERT using less parameters
-  - Parameters: 66 millions
   
 
 ## Transformer architecture
