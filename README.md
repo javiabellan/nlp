@@ -245,12 +245,13 @@
 
 # 🔮 Transformers models
 
-| Self-Attention                           | Masked Self-Attention                    |
-|------------------------------------------|------------------------------------------|
-| <img width="200" src="img/encoder.png"/> | <img width="200" src="img/decoder.png"/> |
-| The original transformer encoder         | The original transformer decoder         |
-| BERT                                     | GPT, GPT-2                               |
-| For LM pretraining                       | For Text generation                      |
+|              | Self-Attention                           | Masked Self-Attention                    |
+|--------------|------------------------------------------|------------------------------------------|
+|              | <img width="200" src="img/encoder.png"/> | <img width="200" src="img/decoder.png"/> |
+| Original     | Transformer encoder                      | Transformer decoder                      |
+| Pretraining  | Bidirectional LM                         | Unidirectional LM                        |
+| Examples     | **BERT**                                 | **GPT**, **GPT-2**                       |
+| Applications | Clasification                            | Text generation                          |
 
 
 #### Transformer input
