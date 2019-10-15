@@ -245,15 +245,12 @@
 
 # 🔮 Transformers models
 
-
-2 types:
-
-| Self-Attention                   | Masked Self-Attention            |
-|----------------------------------|----------------------------------|
-| <p align="center"><img width="200" src="img/encoder.png"/></p> | <p align="center"><img width="200" src="img/decoder.png"/></p> |
-| The original transformer encoder | The original transformer decoder |
-| BERT                             | GPT, GPT-2                       |
-| For LM pretraining               | For Text generation              |
+| Self-Attention                           | Masked Self-Attention                    |
+|------------------------------------------|------------------------------------------|
+| <img width="200" src="img/encoder.png"/> | <img width="200" src="img/decoder.png"/> |
+| The original transformer encoder         | The original transformer decoder         |
+| BERT                                     | GPT, GPT-2                               |
+| For LM pretraining                       | For Text generation                      |
 
 
 #### Transformer input
