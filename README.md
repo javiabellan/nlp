@@ -245,14 +245,13 @@
 
 # 🔮 Transformers models
 
-|              | Self-Attention                           | Masked Self-Attention                    |
+|              | Self-Attention</br>(Transformer Encoder) | Masked Self-Attention</br>(Transformer Decoder) |
 |--------------|------------------------------------------|------------------------------------------|
 |              | <img width="200" src="img/encoder.png"/> | <img width="200" src="img/decoder.png"/> |
-| Original     | Transformer encoder                      | Transformer decoder                      |
 | Advantage    | Context on both sides                    | Auto-Regression                          |
 | Pretraining  | Bidirectional LM                         | Unidirectional LM                        |
 | Examples     | **BERT**                                 | **GPT**, **GPT-2**                       |
-| Applications | Clasification                            | Text generation                          |
+| Applications | **Clasification**                        | **Text generation**                      |
 
 > #### Notes
 > - **Auto-Regression** is when the final output token becomes input.
