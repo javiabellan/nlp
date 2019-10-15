@@ -124,6 +124,7 @@
 | **Transf. ELMo**                                      | AllenNLP  | Jan. 2019 |                                     |    |
 | **GPT-2**                                             | OpenAI    | Feb. 2019 | Good text generation                | ✔  |
 | [**ERNIE**](https://arxiv.org/abs/1904.09223)         | Baidu     | Apr. 2019 |                                     |    |
+| [**ERNIE**](https://arxiv.org/abs/1905.07129)         | Tsinghua  | May. 2019 | Transformer with Knowledge Graph    |    |
 | [**XLNet**](https://arxiv.org/abs/1906.08237)         | Google    | Jun. 2019 | BERT + Transformer-XL               | ✔ |
 | [**RoBERTa**](https://arxiv.org/abs/1907.11692)       | Facebook  | Jul. 2019 | BERT without NSP                    | ✔ |
 | **DistilBERT**                                        | Hug. Face | Aug. 2019 | Compressed BERT                     | ✔ |
@@ -155,7 +156,7 @@
 | **MiniBERT**       |     | Yes |     |      |      |      |      |       |       |       |
 | **ALBERT**         |     |     |     |      |      |      |      |       |       |       |
 | **CTRL**           |     |     |     |      |      |      |      | 1630M |       |       |
-| **DistilBERT**     |     |     | 82M |      |      |      |      |       |       |       |
+| **DistilGPT-2**    |     |     | 82M |      |      |      |      |       |       |       |
   
   
 - **Attention**: (Aug 2015)
