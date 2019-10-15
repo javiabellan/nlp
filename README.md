@@ -2,23 +2,23 @@
 
 > ### Index
 >
-> ##### [**Theory**](#theory)
+> ##### Theory
 > 
 > - 🛠 [**Pipeline**](#-pipeline)
 > - 🔮 Models
 >   - [**Recurrent**](#-recurrent-models)
 >   - [**Convolutional**](#-convolutional-models)
 >   - [**Transformers**](#-transformers-models)
-> - 👨🏻‍🏫 [**Transfer Learning**](#pipeline)
+> - 👨🏻‍🏫 [**Transfer Learning**](#-pipeline)
 > - 📉 [**Losses**](#-losses)
 > - 📏 [**Metrics**](#-metrics)
 >
-> ##### [**Applications**](#applications)
+> ##### Applications
 >
-> - 🔮 [**Language Model**](#language-model)
-> - ❓ [**Clasification**](#clasification)
-> - 🈯 [**Translation**](#translation)
-> - 📋 [**Summarization**](#summarization)
+> - 🔮 [**Language Model**](#-language-model)
+> - ❓ [**Clasification**](#-clasification)
+> - 🈯 [**Translation**](#-translation)
+> - 📋 [**Summarization**](#-summarization)
 > - 🤖 [**Chatbot**](#-chatbot)
 >
 > [**Resources**](#resources)
@@ -329,7 +329,6 @@
 | 👍🏼 👎🏼 **Sentiment analysis**          | Possitive or negative comment/review classification.                       | 💭 |
 | 🔮 **Language Modeling (LM)**          | Predict the next word. Unupervised.                                       | 💭 |
 | 🔮 **Masked Language Modeling (MLM)**  | Predict the omitted words. Unupervised.                                   | 💭 |
-| 🔮 **Next Sentence Prediction (NSP)**  |                                                                          | 💭 |
 | 📗→📄 **Summarization**                | Crate a short version of a text.                                          | 💭 |
 | 🈯→🆗 **Translation**                 | Translate into a different language.                                      | 💭 |
 | 🆓→🆒 **Chatbot**                     | Interact in a conversation.                                               | 💭 |
@@ -341,6 +340,12 @@
 - 🗣️: Speech and sound (speak and listen)
 
 
+
+# 🈯 Translation
+<p align="center"><img width="75%" src="img/translation.png" /></p>
+
+# 📋 Summarization
+<p align="center"><img width="75%" src="img/summarization.png" /></p>
 
 # 🤖 Chatbot
 
