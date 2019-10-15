@@ -342,10 +342,10 @@
 
 
 # 🈯 Translation
-<p align="center"><img width="75%" src="img/translation.png" /></p>
+<p align="center"><img width="80%" src="img/translation.png" /></p>
 
 # 📋 Summarization
-<p align="center"><img width="75%" src="img/summarization.png" /></p>
+<p align="center"><img width="80%" src="img/summarization.png" /></p>
 
 # 🤖 Chatbot
 
