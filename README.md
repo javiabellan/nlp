@@ -74,6 +74,13 @@
 - **Parse trees**: Syntax od a sentence
 
 
+# Tokenization
+<p align="center"><img width="66%" src="img/tokenization.png" /></p>
+<p align="center">3 types: <b>Character level, Subword level and Word level.</b></p>
+
+# N-gram
+Read [this](https://deepai.org/machine-learning-glossary-and-terms/n-gram).
+<p align="center"><img width="66%" src="img/ngrams.png" /></p>
 
 # 🔮 Recurrent models
 
