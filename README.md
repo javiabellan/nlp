@@ -1,3 +1,8 @@
+> ### URGENT:
+> - Multifit [post](http://nlp.fast.ai/classification/2019/09/10/multifit.html), [paper](https://arxiv.org/abs/1909.04761)
+> - [see this 5 videos](https://www.youtube.com/playlist?list=PLIG2x2RJ_4LTF-IIu7-J3y_yg8LRe1WZq)
+
+
 <h1 align="center">Natural Language Processing</h1>
 
 > ### Index
