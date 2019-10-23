@@ -79,9 +79,21 @@
 <p align="center">3 types: <b>Character level, Subword level and Word level.</b></p>
 
 # N-gram
-Read [this](https://deepai.org/machine-learning-glossary-and-terms/n-gram).
+Probability of N words together. Read [this](https://deepai.org/machine-learning-glossary-and-terms/n-gram).
+
 <p align="center"><img width="66%" src="img/ngrams.png" /></p>
 
+> ### Example
+> Toy corpus:
+> - `<start>` `I` `like` `apples` `<end>`
+> - `<start>` `I` `like`  `oranges` `<end>`
+> - `<start>` `I` `do` `not` `like` `broccoli` `<end>`
+>
+> Then:
+> - P(`<start> I like`) = P(`I` | `<start>`) * P(`like` | `I`) = 1 * 0.66 = 0.66
+> - P(`<start> I like apples`) = P(`I` | `<start>`) * P(`like` | `I`) * P(`apples` | `like`) = 1 * 0.66 * 0.5 = 0.33
+ 
+ 
 # 🔮 Recurrent models
 
 - GRU
