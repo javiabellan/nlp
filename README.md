@@ -42,11 +42,6 @@
    - **Stopwords removal**: Remove words like `and`, `the`, `him`. Done in the past. 
    - **Lemmatization**: Verbs to root form: `organizes`, `will organize` `organizing` → `organize` This is better.
    - **Stemming**: Nouns to root form: `democratic`, `democratization` → `democracy`. This is faster.
-   - [**Subword tokenization**](https://medium.com/@makcedward/how-subword-helps-on-your-nlp-model-83dd1b836f46) Used in transformers. ⭐
-     - **WordPiece**: Used in BERT
-     - [**Byte Pair Encoding (BPE)**](https://arxiv.org/abs/1508.07909): Used in GPT-2 (2016)
-     - [**Unigram Language Model**](https://arxiv.org/abs/1804.10959): (2018)
-     - [**SentencePiece**](https://arxiv.org/pdf/1808.06226.pdf): (2018)
 2. **Extract features**
    - **Document features**
      - **Bag of Words (BoW)**: Counts how many times a word appears in a text. (It can be normalize by text lenght)
@@ -80,8 +75,21 @@
 
 
 # Tokenization
+
+- **Character tokenization**
+- **Subword tokenization** The best, used in recent models. ⭐
+- **Word tokenization**: Used in traditional NLP.
+  
 <p align="center"><img width="66%" src="img/tokenization.png" /></p>
-<p align="center">3 types: <b>Character level, Subword level and Word level.</b></p>
+
+### [Subword tokenization](https://medium.com/@makcedward/how-subword-helps-on-your-nlp-model-83dd1b836f46) 
+- **WordPiece**: Used in BERT
+- [**Byte Pair Encoding (BPE)**](https://arxiv.org/abs/1508.07909): Used in GPT-2 (2016)
+- [**Unigram Language Model**](https://arxiv.org/abs/1804.10959): (2018)
+- [**SentencePiece**](https://arxiv.org/pdf/1808.06226.pdf): (2018)
+
+<p align="center"><img width="90%" src="img/bpe_tokenization.png" /></p>
+<p align="center"><b>BPE</b> tokenization of the word <i>_subwords</i></p>
 
 # N-gram
 Probability of N words together. Read [this](https://deepai.org/machine-learning-glossary-and-terms/n-gram).
@@ -311,6 +319,7 @@ Probability of N words together. Read [this](https://deepai.org/machine-learning
 | **2** | **Language Model Finetunning** | 📗 Only you domain text corpus        | 💻 You                |
 | **3** | **Your supervised task**       | 📗🏷️ You labeled domain text          | 💻 You                |
 
+<p align="center"><img width="66%" src="img/transfer.png" /></p>
 
 # 📉 Losses
 
