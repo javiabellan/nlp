@@ -11,8 +11,7 @@
 > 
 > - 🛠 [**Pipeline**](#-pipeline)
 > - 🔮 Models
->   - [**Recurrent**](#-recurrent-models)
->   - [**Convolutional**](#-convolutional-models)
+>   - [**Recurrent & Convolutional**](#-recurrent-&-convolutional-models)
 >   - [**Transformers**](#-transformers-models)
 > - 👨🏻‍🏫 [**Transfer Learning**](#-pipeline)
 > - 📉 [**Losses**](#-losses)
@@ -107,17 +106,23 @@ Probability of N words together. Read [this](https://deepai.org/machine-learning
 > - P(`<start> I like apples`) = P(`I` | `<start>`) * P(`like` | `I`) * P(`apples` | `like`) = 1 * 0.66 * 0.5 = 0.33
  
  
-# 🔮 Recurrent models
+# 🔮 Recurrent & Convolutional models
 
-- GRU
-- LSTM
+- **RNN**: Recurrent Nets
+  - **GRU**
+  - **LSTM**
+    - AWD-LSTM: regular LSTM with tuned dropout hyper-parameters.
+- **CNN**: Convolutional Nets
+  - [Lightweight & Dynamic Convs](https://arxiv.org/abs/1901.10430)
+- **RNN** + **CNN**:
+  - [**QRNN**](https://arxiv.org/abs/1611.01576): Quasi-Recurrent Net. Used in MultiFiT
+
+<p align="center"><img width="90%" src="img/qrnn.png" /></p>
+
 - Tricks
   - Teacher forcing: Feed to the decoder the correct previous word, insted of the predicted previous word (at the beggining of training)
   - Attention: Learns weights to perform a weighted average of the words embeddings.
-  
 
-# 🔮 Convolutional models
-[Lightweight and Dynamic Convolutions](https://arxiv.org/abs/1901.10430)
 
 
 # 🔮 Transformers models
