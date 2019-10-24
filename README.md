@@ -11,7 +11,7 @@
 > 
 > - 🛠 [**Pipeline**](#-pipeline)
 > - 🔮 Models
->   - [**Recurrent & Convolutional**](#-recurrent-&-convolutional-models)
+>   - [**Recurrent & Convolutional**](#-recurrent--convolutional-models)
 >   - [**Transformers**](#-transformers-models)
 > - 👨🏻‍🏫 [**Transfer Learning**](#-pipeline)
 > - 📉 [**Losses**](#-losses)
