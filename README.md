@@ -108,13 +108,12 @@ Probability of N words together. Read [this](https://deepai.org/machine-learning
  
 # 🔮 Recurrent & Convolutional models
 
-- **RNN**: Recurrent Nets
+- **RNN**: Recurrent Nets. No parallel tokens ☹️
   - **GRU**
   - **LSTM**
     - AWD-LSTM: regular LSTM with tuned dropout hyper-parameters.
-- **CNN**: Convolutional Nets
+- **CNN**: Convolutional Nets. Parallel tokens 🙂
   - [Lightweight & Dynamic Convs](https://arxiv.org/abs/1901.10430)
-- **RNN** + **CNN**:
   - [**QRNN**](https://arxiv.org/abs/1611.01576): Quasi-Recurrent Net. Used in MultiFiT
 
 <p align="center"><img width="90%" src="img/qrnn.png" /></p>
