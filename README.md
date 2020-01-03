@@ -439,6 +439,7 @@ Model backbone: Transformer decoder like **GPT** or **GPT2** (pretrained for LM)
     - [Slides](https://nlp.stanford.edu/seminar/details/jdevlin.pdf)
     - [BERT summary](https://www.lyrn.ai/2018/11/07/explained-bert-state-of-the-art-language-model-for-nlp)
     - [BERT, RoBERTa, DistilBERT, XLNet. Which one to use?](https://www.kdnuggets.com/2019/09/bert-roberta-distilbert-xlnet-one-use.html)
+    - [From Attention in Transformers to Dynamic Routing in Capsule Nets](https://staff.fnwi.uva.nl/s.abnar/?p=108)
   - [DistilBERT model by huggingface](https://medium.com/huggingface/distilbert-8cf3380435b5)
 - **Transfer Learning** in NLP by Sebastian Ruder
   - [Blog](http://ruder.io/state-of-transfer-learning-in-nlp)
