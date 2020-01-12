@@ -69,7 +69,7 @@
 - **Parse trees**: Syntax od a sentence
 
 
-# Tokenization: The input representation
+# 🔤 Tokenization: The input representation
 
 - **Character tokenization**
 - **Subword tokenization** The best, used in recent models. ⭐
