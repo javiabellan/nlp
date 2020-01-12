@@ -73,7 +73,7 @@
 - **Parse trees**: Syntax od a sentence
 
 
-# Tokenization
+# Tokenization: The input representation
 
 - **Character tokenization**
 - **Subword tokenization** The best, used in recent models. ⭐
@@ -82,10 +82,10 @@
 <p align="center"><img width="66%" src="img/tokenization.png" /></p>
 
 ### [Subword tokenization](https://medium.com/@makcedward/how-subword-helps-on-your-nlp-model-83dd1b836f46) 
-- **WordPiece**: Used in BERT
-- [**Byte Pair Encoding (BPE)**](https://arxiv.org/abs/1508.07909): Used in GPT-2 (2016)
+- [**Byte Pair Encoding (BPE)**](https://arxiv.org/abs/1508.07909): Used in GPT-2 (2015)
+- [**WordPiece**](https://arxiv.org/abs/1609.08144): Used in BERT (2016)
 - [**Unigram Language Model**](https://arxiv.org/abs/1804.10959): (2018)
-- [**SentencePiece**](https://arxiv.org/pdf/1808.06226.pdf): (2018)
+- [**SentencePiece**](https://arxiv.org/abs/1808.06226): (2018)
 
 <p align="center"><img width="90%" src="img/bpe_tokenization.png" /></p>
 <p align="center"><b>BPE</b> tokenization of the word <i>_subwords</i></p>
