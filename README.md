@@ -1,17 +1,3 @@
-> ### URGENT:
->
-> - Multifit [post](http://nlp.fast.ai/classification/2019/09/10/multifit.html), [paper](https://arxiv.org/abs/1909.04761)
-> - [Facebook: Making Transformer networks simpler and more efficient](https://ai.facebook.com/blog/making-transformer-networks-simpler-and-more-efficient/)
->   - [Adaptive Attention Span](https://arxiv.org/abs/1905.07799): Make Transformers more efficient for longer sentences (over 8000 tokens)
->   - [Only attention layer](https://arxiv.org/abs/1907.01470): Simpler & more efficient architecture
-> - [Sharing Attention Weights for Fast Transformer](https://arxiv.org/abs/1906.11024)
-> - Reformer: The Efficient Transformer
->   - https://openreview.net/forum?id=rkgNKkHtvB
->   - Aims to improve the complexity from O(L^2) to O(L).
->   - Useful when sequences tend to be quiet long.
-> - [see this 5 videos](https://www.youtube.com/playlist?list=PLIG2x2RJ_4LTF-IIu7-J3y_yg8LRe1WZq)
-
-
 <h1 align="center">Natural Language Processing</h1>
 
 > ### Index
@@ -19,6 +5,7 @@
 > ##### Theory
 > 
 > - 🛠 [**Pipeline**](#-pipeline)
+> - 🔤 [**Tokenization**](#-tokenization-the-input-representation)
 > - 🔮 Models
 >   - [**Recurrent & Convolutional**](#-recurrent--convolutional-models)
 >   - [**Transformers**](#-transformers-models)
@@ -141,6 +128,7 @@ Probability of N words together. Read [this](https://deepai.org/machine-learning
 | Advantage    | Context on both sides                    | Auto-Regression                          |
 | Pretraining  | Bidirectional LM (better)                | Unidirectional LM                        |
 | Examples     | **BERT**                                 | **GPT**, **GPT-2**                       |
+| Best one     | **ALBERT** ?                             | **T5** ?                                 |
 | Applications | **Clasification**                        | **Text generation**                      |
 
 > #### Notes
@@ -158,28 +146,29 @@ Probability of N words together. Read [this](https://deepai.org/machine-learning
 > Is a package with pretrained transformers models (PyTorch & Tensorflow). Check their [paper](https://arxiv.org/abs/1910.03771)
 
 | Model                                                 | Creator   | Date      | Breif description                   | 🤗 |
-|:-----------------------------------------------------:|:---------:|:---------:|-------------------------------------|:--:|
-| [**1st Transfor.**](https://arxiv.org/abs/1706.03762) | Google    | Jun. 2017 | Transforer encoder & decoder        |    |
-| [**ULMFiT**](https://arxiv.org/abs/1801.06146)        | Fast.ai   | Jan. 2018 | Regular LSTM                        |    |
-| [**ELMo**](https://arxiv.org/abs/1802.05365)          | AllenNLP  | Feb. 2018 | Bidirectional LSTM                  |    |
-| **GPT**                                               | OpenAI    | Jun. 2018 | Transformer decoder on LM           | ✔  |
-| [**BERT**](https://arxiv.org/abs/1810.04805)          | Google    | Oct. 2018 | Transformer encoder on MLM (& NSP)  | ✔  |
-| [**TransformerXL**](https://arxiv.org/abs/1901.02860) | Google    | Jan. 2019 | Recurrent transformer decoder       | ✔  |
-| [**XLM/mBERT**](https://arxiv.org/abs/1901.07291)     | Facebook  | Jan. 2019 | Multilingual LM                     | ✔  |
-| **Transf. ELMo**                                      | AllenNLP  | Jan. 2019 |                                     |    |
-| **GPT-2**                                             | OpenAI    | Feb. 2019 | Good text generation                | ✔  |
-| [**ERNIE**](https://arxiv.org/abs/1904.09223)         | Baidu     | Apr. 2019 |                                     |    |
-| [**ERNIE**](https://arxiv.org/abs/1905.07129)         | Tsinghua  | May. 2019 | Transformer with Knowledge Graph    |    |
+|:-----------------------------------------------------:|:---------:|:---------:|-------------------------------------|:-:|
+| [**1st Transfor.**](https://arxiv.org/abs/1706.03762) | Google    | Jun. 2017 | Transforer encoder & decoder        |   |
+| [**ULMFiT**](https://arxiv.org/abs/1801.06146)        | Fast.ai   | Jan. 2018 | Regular LSTM                        |   |
+| [**ELMo**](https://arxiv.org/abs/1802.05365)          | AllenNLP  | Feb. 2018 | Bidirectional LSTM                  |   |
+| **GPT**                                               | OpenAI    | Jun. 2018 | Transformer decoder on LM           | ✔ |
+| [**BERT**](https://arxiv.org/abs/1810.04805)          | Google    | Oct. 2018 | Transformer encoder on MLM (& NSP)  | ✔ |
+| [**TransformerXL**](https://arxiv.org/abs/1901.02860) | Google    | Jan. 2019 | Recurrent transformer decoder       | ✔ |
+| [**XLM/mBERT**](https://arxiv.org/abs/1901.07291)     | Facebook  | Jan. 2019 | Multilingual LM                     | ✔ |
+| **Transf. ELMo**                                      | AllenNLP  | Jan. 2019 |                                     |   |
+| **GPT-2**                                             | OpenAI    | Feb. 2019 | Good text generation                | ✔ |
+| [**ERNIE**](https://arxiv.org/abs/1904.09223)         | Baidu     | Apr. 2019 |                                     |   |
+| [**ERNIE**](https://arxiv.org/abs/1905.07129)         | Tsinghua  | May. 2019 | Transformer with Knowledge Graph    |   |
 | [**XLNet**](https://arxiv.org/abs/1906.08237)         | Google    | Jun. 2019 | BERT + Transformer-XL               | ✔ |
 | [**RoBERTa**](https://arxiv.org/abs/1907.11692)       | Facebook  | Jul. 2019 | BERT without NSP                    | ✔ |
 | **DistilBERT**                                        | Hug. Face | Aug. 2019 | Compressed BERT                     | ✔ |
 | [**MiniBERT**](https://arxiv.org/abs/1909.00100)      | Google    | Aug. 2019 | Compressed BERT                     |   |
-| [**MultiFiT**](https://arxiv.org/abs/1909.04761)      | Fast.ai   | Sep. 2019 | Multi-lingual ULMFiT                |   |
-| [**MegatronLM**](https://arxiv.org/abs/1909.08053)    | Nvidia    | Sep. 2019 | Big models with parallel training   |   |
-| [**ALBERT**](https://openreview.net/pdf?id=H1eA7AEtvS) | Google   | Sep. 2019 | Reduce BERT params (param sharing)  | ✔ |
+| [**MultiFiT**](https://arxiv.org/abs/1909.04761)      | Fast.ai   | Sep. 2019 | Multi-lingual ULMFiT (QRNN) [post](http://nlp.fast.ai/classification/2019/09/10/multifit.html) |   |
 | [**CTRL**](https://arxiv.org/abs/1909.05858)          | Salesforce| Sep. 2019 | Controllable text generation        | ✔ |
+| [**MegatronLM**](https://arxiv.org/abs/1909.08053)    | Nvidia    | Sep. 2019 | Big models with parallel training   |   |
+| [**ALBERT**](https://arxiv.org/abs/1909.11942)        | Google    | Sep. 2019 | Reduce BERT params (param sharing)  | ✔ |
 | **DistilGPT-2**                                       | Hug. Face | Oct. 2019 | Compressed GPT-2                    | ✔ |
-
+| [**T5**](https://arxiv.org/abs/1910.10683)            | Google    | Oct. 2019 | Text-to-Text Transfer Transformer   | ✔ |
+| [**Reformer**](https://openreview.net/forum?id=rkgNKkHtvB) | ?    | Dec. 2019 | The Efficient Transformer           |   |
 
 
 | Model              | 2L  | 3L  | 6L  | 12L  | 18L  | 24L  | 36L  |  48L  |  54L  |  72L  |
@@ -289,7 +278,21 @@ Probability of N words together. Read [this](https://deepai.org/machine-learning
     - RoBERTa-Large: 355 millions
   - Trained on 160GB of text
   - Paper [RoBERTa: A Robustly Optimized BERT Pretraining Approach](https://arxiv.org/abs/1907.11692)
-  
+- **Reformer**: The Efficient Transformer
+  - https://openreview.net/forum?id=rkgNKkHtvB
+  - Aims to improve the complexity from O(L^2) to O(L).
+  - Useful when sequences tend to be quiet long.
+
+> ### URGENT:
+>
+> - [Facebook: Making Transformer networks simpler and more efficient](https://ai.facebook.com/blog/making-transformer-networks-simpler-and-more-efficient/)
+>   - [Adaptive Attention Span](https://arxiv.org/abs/1905.07799): Make Transformers more efficient for longer sentences (over 8000 tokens)
+>   - [Only attention layer](https://arxiv.org/abs/1907.01470): Simpler & more efficient architecture
+> - [Sharing Attention Weights for Fast Transformer](https://arxiv.org/abs/1906.11024)
+
+
+
+
 
 ## Transformer architecture
 
@@ -443,6 +446,7 @@ Model backbone: Transformer decoder like **GPT** or **GPT2** (pretrained for LM)
 - **Courses**
   - Fast.ai NLP course: [playlist](https://www.youtube.com/playlist?list=PLtmWHNX-gukKocXQOkQjuVxglSDYWsSh9)
   - [spaCy course](https://course.spacy.io)
+  - [5 videos](https://www.youtube.com/playlist?list=PLIG2x2RJ_4LTF-IIu7-J3y_yg8LRe1WZq)
 - **Transformers**
   - [The Illustrated Transformer](https://jalammar.github.io/illustrated-transformer) (June 2018)
   - [The Illustrated BERT & ELMo](https://jalammar.github.io/illustrated-bert)        (December 2018)
