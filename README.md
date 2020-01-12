@@ -1,5 +1,14 @@
 > ### URGENT:
+>
 > - Multifit [post](http://nlp.fast.ai/classification/2019/09/10/multifit.html), [paper](https://arxiv.org/abs/1909.04761)
+> - [Facebook: Making Transformer networks simpler and more efficient](https://ai.facebook.com/blog/making-transformer-networks-simpler-and-more-efficient/)
+>   - [Adaptive Attention Span](https://arxiv.org/abs/1905.07799): Make Transformers more efficient for longer sentences (over 8000 tokens)
+>   - [Only attention layer](https://arxiv.org/abs/1907.01470): Simpler & more efficient architecture
+> - [Sharing Attention Weights for Fast Transformer](https://arxiv.org/abs/1906.11024)
+> - Reformer: The Efficient Transformer
+>   - https://openreview.net/forum?id=rkgNKkHtvB
+>   - Aims to improve the complexity from O(L^2) to O(L).
+>   - Useful when sequences tend to be quiet long.
 > - [see this 5 videos](https://www.youtube.com/playlist?list=PLIG2x2RJ_4LTF-IIu7-J3y_yg8LRe1WZq)
 
 
