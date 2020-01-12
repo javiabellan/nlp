@@ -145,7 +145,7 @@ Probability of N words together. Read [this](https://deepai.org/machine-learning
 
 ![models](img/models.jpg)
 
-> ### 🤗 [Huggingface transformers](https://github.com/huggingface/transformers) 
+> ### 🤗 [Huggingface transformers](https://huggingface.co/transformers/pretrained_models.html) 
 > Is a package with pretrained transformers models (PyTorch & Tensorflow). Check their [paper](https://arxiv.org/abs/1910.03771)
 
 | Model                                                 | Creator   | Date      | Breif description                   | 🤗 |
@@ -167,7 +167,7 @@ Probability of N words together. Read [this](https://deepai.org/machine-learning
 | [**MiniBERT**](https://arxiv.org/abs/1909.00100)      | Google    | Aug. 2019 | Compressed BERT                     |   |
 | [**MultiFiT**](https://arxiv.org/abs/1909.04761)      | Fast.ai   | Sep. 2019 | Multi-lingual ULMFiT                |   |
 | [**MegatronLM**](https://arxiv.org/abs/1909.08053)    | Nvidia    | Sep. 2019 | Big models with parallel training   |   |
-| [**ALBERT**](https://openreview.net/pdf?id=H1eA7AEtvS) | Google   | Sep. 2019 | Parameter reduction on BERT         |   |
+| [**ALBERT**](https://openreview.net/pdf?id=H1eA7AEtvS) | Google   | Sep. 2019 | Parameter reduction on BERT         | ✔ |
 | [**CTRL**](https://arxiv.org/abs/1909.05858)          | Salesforce| Sep. 2019 | Controllable text generation        | ✔ |
 | **DistilGPT-2**                                       | Hug. Face | Oct. 2019 | Compressed GPT-2                    | ✔ |
 
@@ -419,6 +419,7 @@ Model backbone: Transformer decoder like **GPT** or **GPT2** (pretrained for LM)
 # References
 
 - **TO-DO read**:
+  - [NLP Year in Review — 2019](https://medium.com/dair-ai/nlp-year-in-review-2019-fb8d523bcb19) (Jan 2020) ⭐
   - Read [NLP, Recent Trends](https://medium.com/dair-ai/deep-learning-for-nlp-an-overview-of-recent-trends-d0d8f40a776d) (August 2019) ⭐
   - Read [MASS](https://www.microsoft.com/en-us/research/blog/introducing-mass-a-pre-training-method-that-outperforms-bert-and-gpt-in-sequence-to-sequence-language-generation-tasks): transfer learning in translation for transformers?
   - Read [CNNs better than attention](https://arxiv.org/abs/1901.10430)
