@@ -167,7 +167,7 @@ Probability of N words together. Read [this](https://deepai.org/machine-learning
 | [**MiniBERT**](https://arxiv.org/abs/1909.00100)      | Google    | Aug. 2019 | Compressed BERT                     |   |
 | [**MultiFiT**](https://arxiv.org/abs/1909.04761)      | Fast.ai   | Sep. 2019 | Multi-lingual ULMFiT                |   |
 | [**MegatronLM**](https://arxiv.org/abs/1909.08053)    | Nvidia    | Sep. 2019 | Big models with parallel training   |   |
-| [**ALBERT**](https://openreview.net/pdf?id=H1eA7AEtvS) | Google   | Sep. 2019 | Parameter reduction on BERT         | ✔ |
+| [**ALBERT**](https://openreview.net/pdf?id=H1eA7AEtvS) | Google   | Sep. 2019 | Reduce BERT params (param sharing)  | ✔ |
 | [**CTRL**](https://arxiv.org/abs/1909.05858)          | Salesforce| Sep. 2019 | Controllable text generation        | ✔ |
 | **DistilGPT-2**                                       | Hug. Face | Oct. 2019 | Compressed GPT-2                    | ✔ |
 
