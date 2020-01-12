@@ -334,11 +334,13 @@ Probability of N words together. Read [this](https://deepai.org/machine-learning
  
 # 📏 Metrics
 
-| Score          | For what?       | Description                                               | Interpretation         |
-|:--------------:|:---------------:|-----------------------------------------------------------|------------------------|
-| **Perplexity** | **LM**          |                                                           | The lower the better.  |
-| **GLUE**       | **NLU**         | An avergae of different scores                            |                        |
-| **BLEU**       | **Translation** | Compare generated with reference sentences (N-gram)       | The higher the better. |
+| Score          | Description                                                              | Interpretation         |
+|:--------------:|:-------------------------------------------------------------------------|------------------------|
+| **Perplexity** | **LM**                                                                   | The lower the better.  |
+| **GLUE**       |  An avergae of different scores for **NLU**                              |                        |
+| **BLEU**       | For **Translation**. Compare generated with reference sentences (N-gram) | The higher the better. |
+| [**RACE**](http://www.qizhexie.com/data/RACE_leaderboard.html) | **R**e**A**ding **C**omprehension dataset collected from English **E**xaminations | The higher the better. |
+| [**SQuAD**](https://rajpurkar.github.io/SQuAD-explorer/) | **S**tanford **Qu**estion  **A**nswering **D**ataset | The higher the better. |
 
 > #### BLEU limitation
 > "He ate the apple" & "He ate the potato" has the same BLEU score.
