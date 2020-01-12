@@ -136,14 +136,7 @@ Probability of N words together. Read [this](https://deepai.org/machine-learning
 > - **Original transformer** combines both encoder and decoder, (is the only transformer doing this).
 > - **Transformer-XL** is a recurrent transformer decoder.
 > - **XLNet** has both Context on both sides and Auto-Regression.
-
-
-### [ALL Transformers](https://github.com/thunlp/PLMpapers)
-
-![models](img/models.jpg)
-
-> ### 🤗 [Huggingface transformers](https://huggingface.co/transformers/pretrained_models.html) 
-> Is a package with pretrained transformers models (PyTorch & Tensorflow). Check their [paper](https://arxiv.org/abs/1910.03771)
+> - 🤗 [**Huggingface transformers**](https://huggingface.co/transformers/pretrained_models.html) is a package with pretrained transformers models (PyTorch & Tensorflow).
 
 | Model                                                 | Creator   | Date      | Breif description                   | 🤗 |
 |:-----------------------------------------------------:|:---------:|:---------:|-------------------------------------|:-:|
@@ -452,6 +445,7 @@ Model backbone: Transformer decoder like **GPT** or **GPT2** (pretrained for LM)
   - [The Illustrated BERT & ELMo](https://jalammar.github.io/illustrated-bert)        (December 2018)
   - [The Illustrated GPT-2](https://jalammar.github.io/illustrated-gpt2)              (August 2019) ⭐
   - [Best Transformers explanation](http://www.peterbloem.nl/blog/transformers)       (August 2019) ⭐
+  - [ALL Transformers with chart](https://github.com/thunlp/PLMpapers)
   - **BERT**:
     - [Huggingface](https://medium.com/huggingface/multi-label-text-classification-using-bert-the-mighty-transformer-69714fa3fb3d)
     - [Mlexplained](http://mlexplained.com/2019/01/07/paper-dissected-bert-pre-training-of-deep-bidirectional-transformers-for-language-understanding-explained/)
