@@ -162,7 +162,7 @@ Probability of N words together. Read [this](https://deepai.org/machine-learning
 | **DistilGPT-2**                                       | Hug. Face | Oct. 2019 | Compressed GPT-2                    | ✔ |
 | [**T5**](https://arxiv.org/abs/1910.10683)            | Google    | Oct. 2019 | Text-to-Text Transfer Transformer   | ✔ |
 | [**Reformer**](https://openreview.net/forum?id=rkgNKkHtvB) | ?    | Dec. 2019 | The Efficient Transformer           |   |
-
+| [**ELECTRA**](https://openreview.net/pdf?id=r1xMH1BtvB) | ?       | Dec. 2019 | An efficient LM pretraining        |   |
 
 | Model              | 2L  | 3L  | 6L  | 12L  | 18L  | 24L  | 36L  |  48L  |  54L  |  72L  |
 |:------------------:|:---:|:---:|:---:|:----:|:----:|:----:|:----:|:-----:|:-----:|:-----:|
