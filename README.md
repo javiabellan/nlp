@@ -128,7 +128,7 @@ Probability of N words together. Read [this](https://deepai.org/machine-learning
 | Advantage    | Context on both sides                    | Auto-Regression                          |
 | Pretraining  | Bidirectional LM (better)                | Unidirectional LM                        |
 | Examples     | **BERT**                                 | **GPT**, **GPT-2**                       |
-| Best one     | **ALBERT** ?                             | **T5** ?                                 |
+| Best one     | **ALBERT** ?                             | **T5**, **Meena** ?                      |
 | Applications | **Clasification**                        | **Text generation**                      |
 
 > #### Notes
@@ -161,8 +161,11 @@ Probability of N words together. Read [this](https://deepai.org/machine-learning
 | [**ALBERT**](https://arxiv.org/abs/1909.11942)        | Google    | Sep. 2019 | Reduce BERT params (param sharing)  | ✔ |
 | **DistilGPT-2**                                       | Hug. Face | Oct. 2019 | Compressed GPT-2                    | ✔ |
 | [**T5**](https://arxiv.org/abs/1910.10683)            | Google    | Oct. 2019 | Text-to-Text Transfer Transformer   | ✔ |
-| [**Reformer**](https://openreview.net/forum?id=rkgNKkHtvB) | ?    | Dec. 2019 | The Efficient Transformer           |   |
-| [**ELECTRA**](https://openreview.net/pdf?id=r1xMH1BtvB) | ?       | Dec. 2019 | An efficient LM pretraining        |   |
+| [**ELECTRA**](https://openreview.net/pdf?id=r1xMH1BtvB) | ?       | Dec. 2019 | An efficient LM pretraining         |   |
+| [**Reformer**](https://arxiv.org/abs/2001.04451)      | Google    | Jan. 2020 | The Efficient Transformer           |   |
+| [**Meena**](https://arxiv.org/abs/2001.09977)         | Google    | Jan. 2020 | A Human-like Open-Domain Chatbot    |   |
+
+
 
 | Model              | 2L  | 3L  | 6L  | 12L  | 18L  | 24L  | 36L  |  48L  |  54L  |  72L  |
 |:------------------:|:---:|:---:|:---:|:----:|:----:|:----:|:----:|:-----:|:-----:|:-----:|
