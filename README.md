@@ -1,5 +1,7 @@
 <h1 align="center">Natural Language Processing</h1>
 
+> ### Post with usful links: [transformers are gnns](https://graphdeeplearning.github.io/post/transformers-are-gnns/) 
+
 > ### Index
 >
 > ##### Theory
