@@ -1,0 +1,53 @@
+## [A Survey of Long-Term Context in Transformers](https://www.pragmatic.ml/a-survey-of-methods-for-incorporating-long-term-context)
+
+1. Sparse Transformers
+2. Adaptive Span Transformers
+3. Transformer-XL
+4. Compressive Transformers
+5. Reformer
+6. Routing Transformer
+7. Sinkhorn Transformer
+8. Linformer
+9. Efficient Attention: Attention with Linear Complexities
+10. Transformers are RNNs
+11. ETC
+12. Longformer
+
+
+## [Efficient Transformers: A Survey](https://arxiv.org/abs/2009.06732)
+
+| Model / Paper                        | Complexity  | Decode  | Class |
+|--------------------------------------|-------------|---------|-------|
+| Memory Compressed (Liu, 2018)        | O(n2c)      |   ✓     | FP+M  |
+| Image Transformer (Parmar, 2018)     | O(n.m)      |   ✓     | FP    |
+| Set Transformer (Lee, 2019)          | O(nk)       |   ✗     | M     |
+| Transformer-XL (Dai, 2019)           | O(n2)       |   ✓     | RC    |
+| Sparse Transformer (Child, 2019)     | O(n√n)      |   ✓     | FP    |
+| Reformer (Kitaev, 2020)              | O(n log n)  |   ✓     | LP    |
+| Routing Transformer (Roy, 2020)      | O(n log n)  |   ✓     | LP    |
+| Axial Transformer (Ho, 2019)         | O(n√n)      |   ✓     | FP    |
+| Compressive Transformer (Rae, 2020)  | O(n2)       |   ✓     | RC    |
+| Sinkhorn Transformer (Tay, 2020b)    | O(b2)       |   ✓     | LP    |
+| Longformer (Beltagy, 2020)           | O(n(k + m)) |   ✓     | FP+M  |
+| ETC (Ainslie, 2020)                  | O(n2 + nn)  |   ✗     | FP+M  |
+| Synthesizer (Tay, 2020a)             | O(n2)       |   ✓     | LR+LP |
+| Performer (Choromanski, 2020)        | O(n)        |   ✓     | KR    |
+| Linformer (Wang, 2020b)              | O(n)        |   ✗     | LR    |
+| Linear Transformers (Katharop, 2020) | O(n)        |   ✓     | KR    |
+| Big Bird (Zaheer, 2020)              | O(n)        |   ✗     | FP+M  |
+
+
+- FP = Fixed Patterns or Combinations of Fixed Patterns
+- M  = Memory
+- LP = Learnable Pattern
+- LR = Low Rank
+- KR = Kernel
+- RC = Recurrence.
+- n = the sequence length
+- b = the local window (or block) size.
+
+## RASA
+
+- [ConveRT blog](https://blog.rasa.com/efficient-sentence-representations-in-rasa)
+- [ConveRT paper](https://arxiv.org/abs/1911.03688): Efficient and Accurate Conversational Representations from Transformers
+- [DIET blog](https://blog.rasa.com/introducing-dual-intent-and-entity-transformer-diet-state-of-the-art-performance-on-a-lightweight-architecture/)
