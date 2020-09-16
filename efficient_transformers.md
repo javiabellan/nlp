@@ -59,3 +59,13 @@
 - Some limitations on efficient attn, recurrence, scaling up model size etc
 - Retrieval may solve them
 - Speculates how to extend MARGE to GPT-3
+
+## Funnel-Transformer: Filtering out Sequential Redundancy for Efficient Language Processing
+A transformer model leveraging ideas from regular CNNs (pooling the hidden states after a block of n layers), ELECTRA pretraining and Transformer-XL positional attention.
+
+With the compression of those hidden states, the model outperforms comparable transformers with fewer FLOPs and still works for tasks that require token-level predictions (with a head a bit like a UNet that upsamples the compressed hidden states).
+
+![](https://pbs.twimg.com/media/Eh950DDXcAAUQxT?format=jpg&name=large)
+
+- https://huggingface.co/funnel-transformer
+- https://arxiv.org/abs/2006.03236
