@@ -51,3 +51,11 @@
 - [ConveRT blog](https://blog.rasa.com/efficient-sentence-representations-in-rasa)
 - [ConveRT paper](https://arxiv.org/abs/1911.03688): Efficient and Accurate Conversational Representations from Transformers
 - [DIET blog](https://blog.rasa.com/introducing-dual-intent-and-entity-transformer-diet-state-of-the-art-performance-on-a-lightweight-architecture/)
+
+
+## [Current Limitations of Language Models: What You Need is Retrieval](https://arxiv.org/abs/2009.06857)
+
+- Classifies & analyzes LM approaches
+- Some limitations on efficient attn, recurrence, scaling up model size etc
+- Retrieval may solve them
+- Speculates how to extend MARGE to GPT-3
