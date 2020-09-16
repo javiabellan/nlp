@@ -46,6 +46,8 @@
 - n = the sequence length
 - b = the local window (or block) size.
 
+![](https://pbs.twimg.com/media/EiDGXGGVkAAKMjj?format=jpg&name=medium)
+
 ## RASA
 
 - [ConveRT blog](https://blog.rasa.com/efficient-sentence-representations-in-rasa)
