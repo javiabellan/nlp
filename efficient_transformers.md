@@ -17,7 +17,7 @@
 ## [Efficient Transformers: A Survey](https://arxiv.org/abs/2009.06732) (Sep 2020)
 
 | Model / Paper                        | Complexity  | Decode  | Class |
-|--------------------------------------|-------------|---------|-------|
+|--------------------------------------|:-----------:|---------|-------|
 | Memory Compressed (Liu, 2018)        | O(n2c)      |   ✓     | FP+M  |
 | Image Transformer (Parmar, 2018)     | O(n.m)      |   ✓     | FP    |
 | Set Transformer (Lee, 2019)          | O(nk)       |   ✗     | M     |
@@ -46,7 +46,7 @@
 - n = the sequence length
 - b = the local window (or block) size.
 
-![](https://pbs.twimg.com/media/EiDGXGGVkAAKMjj?format=jpg&name=medium)
+<p align="center"><img width="80%" src="img/efficient_transformers.jpeg" /></p>
 
 
 ## [Long Range Arena: A Benchmark for Efficient Transformers](https://arxiv.org/abs/2011.04006) (Nov 2020)
@@ -54,6 +54,15 @@
 Deep Mind recently came out with Long Range Arena, a benchmark suite to pit Efficient Transformers against each other in Long Range Tasks.
 
 [twitt](https://twitter.com/cgarciae88/status/1327382406886813712)
+
+## High Performance NLP (Nov 2020)
+
+Charla en el conferencia EMNLP 2020.
+
+- [Diapositivas en PDF](http://gabrielilharco.com/publications/EMNLP_2020_Tutorial__High_Performance_NLP.pdf) (274 páginas)
+- [Video en slideslive](https://slideslive.com/38940826) (3 horas de video)
+
+---
 
 ## RASA
 
