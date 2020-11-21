@@ -52,6 +52,7 @@
 ## [Long Range Arena: A Benchmark for Efficient Transformers](https://arxiv.org/abs/2011.04006) (Nov 2020)
 
 Deep Mind recently came out with Long Range Arena, a benchmark suite to pit Efficient Transformers against each other in Long Range Tasks.
+**Sizes of circles = Memory footprint**.
 
 <p align="center"><img width="50%" src="img/Long_Range_Arena.png" /></p>
 
