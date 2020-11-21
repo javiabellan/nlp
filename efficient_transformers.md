@@ -17,7 +17,7 @@
 ## [Efficient Transformers: A Survey](https://arxiv.org/abs/2009.06732) (Sep 2020)
 
 | Model / Paper                        | Complexity  | Decode  | Class |
-|--------------------------------------|:-----------:|---------|-------|
+|--------------------------------------|:-----------:|:-------:|:-----:|
 | Memory Compressed (Liu, 2018)        | O(n2c)      |   ✓     | FP+M  |
 | Image Transformer (Parmar, 2018)     | O(n.m)      |   ✓     | FP    |
 | Set Transformer (Lee, 2019)          | O(nk)       |   ✗     | M     |
