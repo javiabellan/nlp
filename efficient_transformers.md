@@ -53,7 +53,7 @@
 
 Deep Mind recently came out with Long Range Arena, a benchmark suite to pit Efficient Transformers against each other in Long Range Tasks.
 
-<p align="center"><img width="50%" src="img/Long Range Arena.png" /></p>
+<p align="center"><img width="50%" src="img/Long_Range_Arena.png" /></p>
 
 
 [twitt](https://twitter.com/cgarciae88/status/1327382406886813712)
