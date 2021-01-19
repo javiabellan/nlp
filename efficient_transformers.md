@@ -1,3 +1,9 @@
+## [Notebook Transformer from scrath](https://colab.research.google.com/drive/1swXWW5sOLW8zSZBaQBYcGQkQ_Bje_bmI)
+- In Pytorch
+- With PyTorchLightning training loop
+- Both Encoder and decoder
+- [twitt](https://twitter.com/full_stack_dl/status/1349156930518859780)
+
 ## [A Survey of Long-Term Context in Transformers](https://www.pragmatic.ml/a-survey-of-methods-for-incorporating-long-term-context)
 
 1. Sparse Transformers
@@ -66,6 +72,18 @@ Charla en el conferencia EMNLP 2020.
 - [Diapositivas en PDF](http://gabrielilharco.com/publications/EMNLP_2020_Tutorial__High_Performance_NLP.pdf) (274 páginas)
 - [Video en slideslive](https://slideslive.com/38940826) (3 horas de video)
 
+# Image transformer: An Image is Worth 16x16 Words
+
+- [illustrated blog](https://amaarora.github.io/2021/01/18/ViT.html)
+  - [twitt](https://twitter.com/amaarora/status/1351313539151982594)
+- [Yannic Kilcher video](https://www.youtube.com/watch?v=TrdevFK_am4)
+- [Arxiv paper](https://arxiv.org/abs/2010.11929)
+
+
+# Switch Transformers: Scaling to Trillion Parameter Models with Simple and Efficient Sparsity
+- [blog](https://syncedreview.com/2021/01/14/google-brains-switch-transformer-language-model-packs-1-6-trillion-parameters/)
+- [Arxiv paper](https://arxiv.org/abs/2101.03961)
+- [twitt](https://twitter.com/barret_zoph/status/1348832181980811265)
 ---
 
 ## RASA
