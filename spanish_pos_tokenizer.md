@@ -6,6 +6,10 @@ Un etiquetador gramatical es un programa responsable de realizar PoS tagging.
 Text --> Tokens --> Lema    --> Lema Embeding --> Sum --> Final word embedding
                 |-> PoS tag --> PoS Embeding  --/
 ```
+### Tokenizador
+
+- `vámonos` `al` `mar` -> `vamos` `nos` `a` `el` `mar`
+- `del` -> `de` `el`
 
 ### Ejemplos
 
