@@ -41,7 +41,11 @@
 | Linformer (Wang, 2020b)              | O(n)        |   ✗     | LR    |
 | Linear Transformers (Katharop, 2020) | O(n)        |   ✓     | KR    |
 | Big Bird (Zaheer, 2020)              | O(n)        |   ✗     | FP+M  |
+| May 2021 [Apple's AFT](https://arxiv.org/abs/2105.14103) |
+| [RWKV: RNN with Transformer performance](https://github.com/BlinkDL/RWKV-LM) |
 
+https://huggingface.co/blog/big-bird
+https://huggingface.co/blog/long-range-transformers
 
 - FP = Fixed Patterns or Combinations of Fixed Patterns
 - M  = Memory
