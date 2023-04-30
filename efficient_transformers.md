@@ -43,6 +43,8 @@
 | Big Bird (Zaheer, 2020)              | O(n)        |   ✗     | FP+M  |
 | May 2021 [Apple's AFT](https://arxiv.org/abs/2105.14103) |
 | [RWKV: RNN with Transformer performance](https://github.com/BlinkDL/RWKV-LM) |
+| [Recurrent Memory Transformer (RMT)](https://arxiv.org/abs/2207.06881) | Jun 2022 | | |
+| [Scaling Transformer to 1M tokens and beyond with RMT](https://arxiv.org/abs/2304.11062) | Apr 2023 | | |
 
 https://huggingface.co/blog/big-bird
 https://huggingface.co/blog/long-range-transformers
