@@ -27,7 +27,7 @@
 | Jan 2018 | **Memory Compressed**                         | [paper](https://arxiv.org/abs/1801.10198) | O(n2c)     |    ✓   | FP+M  |
 | Feb 2018 | **Image Transformer**                         | [paper](https://arxiv.org/abs/1802.05751) | O(n.m)     |    ✓   | FP    |
 | Oct 2018 | **Set Transformer**                           | [paper](https://arxiv.org/abs/1810.00825) | O(nk)      |    ✗   | M     |
-| Jan 2019 | **Transformer-XL**                            | [paper](https://arxiv.org/abs/1901.02860) | O(n2)      |    ✓   | RC    |
+| Jan 2019 | **Transformer-XL**                            | [paper](https://arxiv.org/abs/1901.02860) | O(n2)      |    ✓   | Recurrent |
 | Apr 2019 | **Sparse Transformer**                        | [paper](https://arxiv.org/abs/1904.10509) | O(n√n)     |    ✓   | FP    |
 | Nov 2019 | **Compressive Transformer**                   | [paper](https://arxiv.org/abs/1911.05507) | O(n2)      |    ✓   | RC    |
 | Dec 2019 | **Axial Transformer**                         | [paper](https://arxiv.org/abs/1912.12180) | O(n√n)     |    ✓   | FP    |
@@ -44,9 +44,9 @@
 | Jan 2021 | **Switch Transformer**: Efficient Sparsity    | [paper](https://arxiv.org/abs/2101.03961) |            |        |       |
 | Feb 2021 | **Nyströmformer**                             | [paper](https://arxiv.org/abs/2102.03902) |            |        |       |
 | May 2021 | Apple's **AFT**: Attention Free Transformer   | [paper](https://arxiv.org/abs/2105.14103) |            |        |       |
-| xxx xxxx | **RWKV**: RNN with Transformer performance    | [github](https://github.com/BlinkDL/RWKV-LM) |         |        |       |
-| Jun 2022 | **RMT** 1.0: Recurrent Memory Transformer     | [paper](https://arxiv.org/abs/2207.06881) |            |        |       |
-| Apr 2023 | **RMT** 2.0: Scaling Transformer to 1M tokens | [paper](https://arxiv.org/abs/2304.11062) [video](https://youtu.be/4Cclp6yPDuw) | | | |
+| xxx xxxx | **RWKV**: RNN with Transformer performance    | [github](https://github.com/BlinkDL/RWKV-LM) |         |        | RNN   |
+| Jun 2022 | **RMT** 1.0: Recurrent Memory Transformer     | [paper](https://arxiv.org/abs/2207.06881) |            |        | Recurrent + BPTT  |
+| Apr 2023 | **RMT** 2.0: Scaling Transformer to 1M tokens | [paper](https://arxiv.org/abs/2304.11062) [video](https://youtu.be/4Cclp6yPDuw) | | | Recurrent + BPTT |
 
 
 - FP = Fixed Patterns or Combinations of Fixed Patterns
