@@ -4,7 +4,7 @@
 - Both Encoder and decoder
 - [twitt](https://twitter.com/full_stack_dl/status/1349156930518859780)
 
-## [A Survey of Long-Term Context in Transformers](https://www.pragmatic.ml/a-survey-of-methods-for-incorporating-long-term-context)
+## SOURCE 1 [A Survey of Long-Term Context in Transformers](https://www.pragmatic.ml/a-survey-of-methods-for-incorporating-long-term-context)
 
 1. Sparse Transformers
 2. Adaptive Span Transformers
@@ -20,7 +20,7 @@
 12. Longformer
 
 
-## [Efficient Transformers: A Survey](https://arxiv.org/abs/2009.06732) (Sep 2020)
+## SOURCE 2 [Efficient Transformers: A Survey](https://arxiv.org/abs/2009.06732) (Sep 2020)
 
 | Date     | Model                                         | Paper                                     | Complexity | Decode | Class |
 |:--------:|:----------------------------------------------|:------------------------------------------|:----------:|:------:|:-----:|
@@ -41,14 +41,13 @@
 | Jun 2020 | **Linear Transformer**                        | [paper](https://arxiv.org/abs/2006.16236) | O(n)       |    ✓   | KR    |
 | Jul 2020 | **Big Bird**                                  | [paper](https://arxiv.org/abs/2007.14062) | O(n)       |    ✗   | FP+M  |
 | Sep 2020 | **Performer**                                 | [paper](https://arxiv.org/abs/2009.14794) | O(n)       |    ✓   | KR    |
+| Jan 2021 | **Switch Transformer**: Efficient Sparsity    | [paper](https://arxiv.org/abs/2101.03961) |            |        |       |
 | Feb 2021 | **Nyströmformer**                             | [paper](https://arxiv.org/abs/2102.03902) |            |        |       |
 | May 2021 | Apple's **AFT**: Attention Free Transformer   | [paper](https://arxiv.org/abs/2105.14103) |            |        |       |
 | xxx xxxx | **RWKV**: RNN with Transformer performance    | [github](https://github.com/BlinkDL/RWKV-LM) |         |        |       |
 | Jun 2022 | **RMT** 1.0: Recurrent Memory Transformer     | [paper](https://arxiv.org/abs/2207.06881) |            |        |       |
 | Apr 2023 | **RMT** 2.0: Scaling Transformer to 1M tokens | [paper](https://arxiv.org/abs/2304.11062) | [video](https://youtu.be/4Cclp6yPDuw) | | |
 
-https://huggingface.co/blog/big-bird
-https://huggingface.co/blog/long-range-transformers
 
 - FP = Fixed Patterns or Combinations of Fixed Patterns
 - M  = Memory
@@ -62,24 +61,28 @@ https://huggingface.co/blog/long-range-transformers
 <p align="center"><img width="80%" src="img/efficient_transformers.jpeg" /></p>
 
 
-## [Long Range Arena: A Benchmark for Efficient Transformers](https://arxiv.org/abs/2011.04006) (Nov 2020)
+## SOURCE 3 [Long Range Arena: A Benchmark for Efficient Transformers](https://arxiv.org/abs/2011.04006) (Nov 2020)
 
 Deep Mind recently came out with Long Range Arena, a benchmark suite to pit Efficient Transformers against each other in Long Range Tasks.
 **Sizes of circles = Memory footprint**.
 
 <p align="center"><img width="50%" src="img/Long_Range_Arena.png" /></p>
 
-
 [twitt](https://twitter.com/cgarciae88/status/1327382406886813712)
 
-## High Performance NLP (Nov 2020)
 
-Charla en el conferencia EMNLP 2020.
+## OTHER SOURCES
+- https://huggingface.co/blog/long-range-transformers
+- High Performance NLP (Nov 2020): Charla en el conferencia EMNLP 2020.
+  - [Diapositivas en PDF](http://gabrielilharco.com/publications/EMNLP_2020_Tutorial__High_Performance_NLP.pdf) (274 páginas)
+  - [Video en slideslive](https://slideslive.com/38940826) (3 horas de video)
 
-- [Diapositivas en PDF](http://gabrielilharco.com/publications/EMNLP_2020_Tutorial__High_Performance_NLP.pdf) (274 páginas)
-- [Video en slideslive](https://slideslive.com/38940826) (3 horas de video)
 
-# Image transformer: An Image is Worth 16x16 Words
+---
+
+# Models in detail
+  
+## Image transformer: An Image is Worth 16x16 Words
 
 - [illustrated blog](https://amaarora.github.io/2021/01/18/ViT.html)
   - [twitt](https://twitter.com/amaarora/status/1351313539151982594)
@@ -87,7 +90,11 @@ Charla en el conferencia EMNLP 2020.
 - [Arxiv paper](https://arxiv.org/abs/2010.11929)
 
 
-# Switch Transformers: Scaling to Trillion Parameter Models with Simple and Efficient Sparsity
+## Big Bird
+- https://huggingface.co/blog/big-bird
+
+
+## Switch Transformers: Scaling to Trillion Parameter Models with Simple and Efficient Sparsity
 - [blog](https://syncedreview.com/2021/01/14/google-brains-switch-transformer-language-model-packs-1-6-trillion-parameters/)
 - [Arxiv paper](https://arxiv.org/abs/2101.03961)
 - [twitt](https://twitter.com/barret_zoph/status/1348832181980811265)
