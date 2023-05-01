@@ -43,6 +43,7 @@
 | Sep 2020 | **Performer**                                 | [paper](https://arxiv.org/abs/2009.14794) | O(n)       |    ✓   | KR    |
 | Jan 2021 | **Switch Transformer**: Efficient Sparsity    | [paper](https://arxiv.org/abs/2101.03961) |            |        |       |
 | Feb 2021 | **Nyströmformer**                             | [paper](https://arxiv.org/abs/2102.03902) |            |        |       |
+| May 2021 | **FNet**: Fourier Transforms instead of attn  | [paper](https://arxiv.org/abs/2105.03824) [video](https://youtu.be/JJR3pBl78zw) | | | Fourier attn |
 | May 2021 | Apple's **AFT**: Attention Free Transformer   | [paper](https://arxiv.org/abs/2105.14103) |            |        |       |
 | xxx xxxx | **RWKV**: RNN with Transformer performance    | [github](https://github.com/BlinkDL/RWKV-LM) |         |        | RNN   |
 | Jun 2022 | **RMT** 1.0: Recurrent Memory Transformer     | [paper](https://arxiv.org/abs/2207.06881) |            |        | Recurrent + BPTT  |
