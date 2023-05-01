@@ -22,7 +22,7 @@
 
 ## SOURCE 2 [Efficient Transformers: A Survey](https://arxiv.org/abs/2009.06732) (Sep 2020)
 
-| Date     | Model                                         | Paper                                     | Complexity | Decode | Class |
+| Date     | Model                                         | Links                                     | Complexity | Decode | Class |
 |:--------:|:----------------------------------------------|:------------------------------------------|:----------:|:------:|:-----:|
 | Jan 2018 | **Memory Compressed**                         | [paper](https://arxiv.org/abs/1801.10198) | O(n2c)     |    ✓   | FP+M  |
 | Feb 2018 | **Image Transformer**                         | [paper](https://arxiv.org/abs/1802.05751) | O(n.m)     |    ✓   | FP    |
@@ -39,14 +39,14 @@
 | May 2020 | **Synthesizer**                               | [paper](https://arxiv.org/abs/2005.00743) | O(n2)      |    ✓   | LR+LP |
 | Jun 2020 | **Linformer**                                 | [paper](https://arxiv.org/abs/2006.04768) | O(n)       |    ✗   | LR    |
 | Jun 2020 | **Linear Transformer**                        | [paper](https://arxiv.org/abs/2006.16236) | O(n)       |    ✓   | KR    |
-| Jul 2020 | **Big Bird**                                  | [paper](https://arxiv.org/abs/2007.14062) | O(n)       |    ✗   | FP+M  |
+| Jul 2020 | **Big Bird**                                  | [paper](https://arxiv.org/abs/2007.14062) [video](https://youtu.be/WVPE62Gk3EM) | O(n)       |    ✗   | FP+M  |
 | Sep 2020 | **Performer**                                 | [paper](https://arxiv.org/abs/2009.14794) | O(n)       |    ✓   | KR    |
 | Jan 2021 | **Switch Transformer**: Efficient Sparsity    | [paper](https://arxiv.org/abs/2101.03961) |            |        |       |
 | Feb 2021 | **Nyströmformer**                             | [paper](https://arxiv.org/abs/2102.03902) |            |        |       |
 | May 2021 | Apple's **AFT**: Attention Free Transformer   | [paper](https://arxiv.org/abs/2105.14103) |            |        |       |
 | xxx xxxx | **RWKV**: RNN with Transformer performance    | [github](https://github.com/BlinkDL/RWKV-LM) |         |        |       |
 | Jun 2022 | **RMT** 1.0: Recurrent Memory Transformer     | [paper](https://arxiv.org/abs/2207.06881) |            |        |       |
-| Apr 2023 | **RMT** 2.0: Scaling Transformer to 1M tokens | [paper](https://arxiv.org/abs/2304.11062) | [video](https://youtu.be/4Cclp6yPDuw) | | |
+| Apr 2023 | **RMT** 2.0: Scaling Transformer to 1M tokens | [paper](https://arxiv.org/abs/2304.11062) [video](https://youtu.be/4Cclp6yPDuw) | | | |
 
 
 - FP = Fixed Patterns or Combinations of Fixed Patterns
