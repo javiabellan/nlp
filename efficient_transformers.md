@@ -94,10 +94,32 @@ Deep Mind recently came out with Long Range Arena, a benchmark suite to pit Effi
 - https://huggingface.co/blog/big-bird
 
 
-## Switch Transformers: Scaling to Trillion Parameter Models with Simple and Efficient Sparsity
+## Switch Transformers
 - [blog](https://syncedreview.com/2021/01/14/google-brains-switch-transformer-language-model-packs-1-6-trillion-parameters/)
 - [Arxiv paper](https://arxiv.org/abs/2101.03961)
 - [twitt](https://twitter.com/barret_zoph/status/1348832181980811265)
+
+
+## RWKV
+
+- RWKV is an RNN with Transformer-level LLM performance
+- inspired by Apple’s AFT
+- great performance
+- fast training and inference
+- saves VRAM
+- "infinite" context len
+- free sentence embedding
+- they are training on the Pile, and after that, they are planning on finetune using the dataset of Yannick Kilcher and the Open Assistant team.
+
+#### Links
+
+- [Github repo](https://github.com/BlinkDL/RWKV-LM)
+- [Overview](https://johanwind.github.io/2023/03/23/rwkv_overview.html)
+- [Details](https://johanwind.github.io/2023/03/23/rwkv_details.html)
+- [RWKV_in_150_lines.py](https://github.com/BlinkDL/ChatRWKV/blob/main/RWKV_in_150_lines.py)
+- https://forums.fast.ai/t/rwkv-the-generative-lm-that-could-help-rnns-make-a-comeback/103595/4
+
+
 ---
 
 ## RASA
