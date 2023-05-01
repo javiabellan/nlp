@@ -22,29 +22,30 @@
 
 ## [Efficient Transformers: A Survey](https://arxiv.org/abs/2009.06732) (Sep 2020)
 
-| Model / Paper                        | Complexity  | Decode  | Class |
-|--------------------------------------|:-----------:|:-------:|:-----:|
-| Memory Compressed (Liu, 2018)        | O(n2c)      |   ✓     | FP+M  |
-| Image Transformer (Parmar, 2018)     | O(n.m)      |   ✓     | FP    |
-| Set Transformer (Lee, 2019)          | O(nk)       |   ✗     | M     |
-| Transformer-XL (Dai, 2019)           | O(n2)       |   ✓     | RC    |
-| Sparse Transformer (Child, 2019)     | O(n√n)      |   ✓     | FP    |
-| Reformer (Kitaev, 2020)              | O(n log n)  |   ✓     | LP    |
-| Routing Transformer (Roy, 2020)      | O(n log n)  |   ✓     | LP    |
-| Axial Transformer (Ho, 2019)         | O(n√n)      |   ✓     | FP    |
-| Compressive Transformer (Rae, 2020)  | O(n2)       |   ✓     | RC    |
-| Sinkhorn Transformer (Tay, 2020b)    | O(b2)       |   ✓     | LP    |
-| Longformer (Beltagy, 2020)           | O(n(k + m)) |   ✓     | FP+M  |
-| ETC (Ainslie, 2020)                  | O(n2 + nn)  |   ✗     | FP+M  |
-| Synthesizer (Tay, 2020a)             | O(n2)       |   ✓     | LR+LP |
-| Performer (Choromanski, 2020)        | O(n)        |   ✓     | KR    |
-| Linformer (Wang, 2020b)              | O(n)        |   ✗     | LR    |
-| Linear Transformers (Katharop, 2020) | O(n)        |   ✓     | KR    |
-| Big Bird (Zaheer, 2020)              | O(n)        |   ✗     | FP+M  |
-| May 2021 [Apple's AFT](https://arxiv.org/abs/2105.14103) |
-| [RWKV: RNN with Transformer performance](https://github.com/BlinkDL/RWKV-LM) |
-| [Recurrent Memory Transformer (RMT)](https://arxiv.org/abs/2207.06881) | Jun 2022 | | |
-| [Scaling Transformer to 1M tokens and beyond with RMT](https://arxiv.org/abs/2304.11062) | Apr 2023 | | |
+| Date     | Model                                         | Paper                                     | Complexity | Decode | Class |
+|:--------:|:----------------------------------------------|:------------------------------------------|:----------:|:------:|:-----:|
+| Jan 2018 | **Memory Compressed**                         | [paper](https://arxiv.org/abs/1801.10198) | O(n2c)     |    ✓   | FP+M  |
+| Feb 2018 | **Image Transformer**                         | [paper](https://arxiv.org/abs/1802.05751) | O(n.m)     |    ✓   | FP    |
+| Oct 2018 | **Set Transformer**                           | [paper](https://arxiv.org/abs/1810.00825) | O(nk)      |    ✗   | M     |
+| Jan 2019 | **Transformer-XL**                            | [paper](https://arxiv.org/abs/1901.02860) | O(n2)      |    ✓   | RC    |
+| Apr 2019 | **Sparse Transformer**                        | [paper](https://arxiv.org/abs/1904.10509) | O(n√n)     |    ✓   | FP    |
+| Nov 2019 | **Compressive Transformer**                   | [paper](https://arxiv.org/abs/1911.05507) | O(n2)      |    ✓   | RC    |
+| Dec 2019 | **Axial Transformer**                         | [paper](https://arxiv.org/abs/1912.12180) | O(n√n)     |    ✓   | FP    |
+| Jan 2020 | **Reformer**                                  | [paper](https://arxiv.org/abs/2001.04451) | O(n log n) |    ✓   | LP    |
+| Feb 2020 | **Sinkhorn Transformer**                      | [paper](https://arxiv.org/abs/2002.11296) | O(b2)      |    ✓   | LP    |
+| Mar 2020 | **Routing Transformer**                       | [paper](https://arxiv.org/abs/2003.05997) | O(n log n) |    ✓   | LP    |
+| Apr 2020 | **Longformer**                                | [paper](https://arxiv.org/abs/2004.05150) | O(n(k+m))  |    ✓   | FP+M  |
+| Apr 2020 | **ETC**: Encoding Long and Structured Inputs  | [paper](https://arxiv.org/abs/2004.08483) | O(n2 + nn) |    ✗   | FP+M  |
+| May 2020 | **Synthesizer**                               | [paper](https://arxiv.org/abs/2005.00743) | O(n2)      |    ✓   | LR+LP |
+| Jun 2020 | **Linformer**                                 | [paper](https://arxiv.org/abs/2006.04768) | O(n)       |    ✗   | LR    |
+| Jun 2020 | **Linear Transformer**                        | [paper](https://arxiv.org/abs/2006.16236) | O(n)       |    ✓   | KR    |
+| Jul 2020 | **Big Bird**                                  | [paper](https://arxiv.org/abs/2007.14062) | O(n)       |    ✗   | FP+M  |
+| Sep 2020 | **Performer**                                 | [paper](https://arxiv.org/abs/2009.14794) | O(n)       |    ✓   | KR    |
+| Feb 2021 | **Nyströmformer**                             | [paper](https://arxiv.org/abs/2102.03902) |            |        |       |
+| May 2021 | Apple's **AFT**: Attention Free Transformer   | [paper](https://arxiv.org/abs/2105.14103) |            |        |       |
+| xxx xxxx | **RWKV**: RNN with Transformer performance    | [github](https://github.com/BlinkDL/RWKV-LM) |         |        |       |
+| Jun 2022 | **RMT** 1.0: Recurrent Memory Transformer     | [paper](https://arxiv.org/abs/2207.06881) |            |        |       |
+| Apr 2023 | **RMT** 2.0: Scaling Transformer to 1M tokens | [paper](https://arxiv.org/abs/2304.11062) | [video](https://youtu.be/4Cclp6yPDuw) | | |
 
 https://huggingface.co/blog/big-bird
 https://huggingface.co/blog/long-range-transformers
